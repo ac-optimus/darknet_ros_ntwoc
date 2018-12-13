@@ -16,7 +16,7 @@ def DarknetOutput():
 
 def PubliSher():
     #intialize the node
-    rospy.init_node("boundBox",anonymous = True)
+    rospy.init_node("Sender",anonymous = True)
 
     #create the publisher
     pub = rospy.Publisher("CoOrdinates", BoundingBox)
