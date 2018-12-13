@@ -2,4 +2,4 @@
 source_root_dir = "/home/ac-optimus/Desktop/catkin_ws/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/opt/ros/kinetic".split(';') if "/opt/ros/kinetic" != "" else []
+underlay_workspaces = "/home/ac-optimus/Desktop/catkin_ws/devel;/opt/ros/kinetic".split(';') if "/home/ac-optimus/Desktop/catkin_ws/devel;/opt/ros/kinetic" != "" else []

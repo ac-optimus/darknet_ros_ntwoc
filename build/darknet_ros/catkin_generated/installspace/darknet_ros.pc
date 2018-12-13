@@ -1,0 +1,8 @@
+prefix=/home/ac-optimus/Desktop/catkin_ws/install
+
+Name: darknet_ros
+Description: Description of darknet_ros
+Version: 0.0.0
+Cflags: -I/home/ac-optimus/Desktop/catkin_ws/install/include
+Libs: -L/home/ac-optimus/Desktop/catkin_ws/install/lib 
+Requires: message_runtime roscpp rospy std_msgs
