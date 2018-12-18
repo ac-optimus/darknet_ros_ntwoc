@@ -1,0 +1,8 @@
+prefix=/home/ac-optimus/darknet_ros_ntwoc/devel
+
+Name: topicImgThreadcpp
+Description: Description of topicImgThreadcpp
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ac-optimus/darknet_ros_ntwoc/devel/lib 
+Requires: 
