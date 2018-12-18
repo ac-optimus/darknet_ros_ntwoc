@@ -1,8 +1,8 @@
-# Install script for directory: /home/ac-optimus/Desktop/catkin_ws/src/darknet_ros
+# Install script for directory: /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src/darknet_ros
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ac-optimus/Desktop/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,53 +33,53 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet_ros/msg" TYPE FILE FILES "/home/ac-optimus/Desktop/catkin_ws/src/darknet_ros/msg/BoundingBox.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet_ros/msg" TYPE FILE FILES "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/src/darknet_ros/msg/BoundingBox.msg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet_ros/cmake" TYPE FILE FILES "/home/ac-optimus/Desktop/catkin_ws/build/darknet_ros/catkin_generated/installspace/darknet_ros-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet_ros/cmake" TYPE FILE FILES "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros/catkin_generated/installspace/darknet_ros-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ac-optimus/Desktop/catkin_ws/devel/include/darknet_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/include/darknet_ros")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ac-optimus/Desktop/catkin_ws/devel/share/roseus/ros/darknet_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/share/roseus/ros/darknet_ros")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ac-optimus/Desktop/catkin_ws/devel/share/common-lisp/ros/darknet_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/share/common-lisp/ros/darknet_ros")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ac-optimus/Desktop/catkin_ws/devel/share/gennodejs/ros/darknet_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/share/gennodejs/ros/darknet_ros")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ac-optimus/Desktop/catkin_ws/build/darknet_ros/catkin_generated/installspace/darknet_ros.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros/catkin_generated/installspace/darknet_ros.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet_ros/cmake" TYPE FILE FILES "/home/ac-optimus/Desktop/catkin_ws/build/darknet_ros/catkin_generated/installspace/darknet_ros-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet_ros/cmake" TYPE FILE FILES "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros/catkin_generated/installspace/darknet_ros-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet_ros/cmake" TYPE FILE FILES
-    "/home/ac-optimus/Desktop/catkin_ws/build/darknet_ros/catkin_generated/installspace/darknet_rosConfig.cmake"
-    "/home/ac-optimus/Desktop/catkin_ws/build/darknet_ros/catkin_generated/installspace/darknet_rosConfig-version.cmake"
+    "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros/catkin_generated/installspace/darknet_rosConfig.cmake"
+    "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros/catkin_generated/installspace/darknet_rosConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet_ros" TYPE FILE FILES "/home/ac-optimus/Desktop/catkin_ws/src/darknet_ros/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/darknet_ros" TYPE FILE FILES "/home/ac-optimus/deleteGit/darknet_ros_ntwoc/src/darknet_ros/package.xml")
 endif()
 

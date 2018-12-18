@@ -43,33 +43,33 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ac-optimus/Desktop/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ac-optimus/Desktop/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build
 
 # Utility rule file for darknet_ros_generate_messages_py.
 
 # Include the progress variables for this target.
 include darknet_ros/CMakeFiles/darknet_ros_generate_messages_py.dir/progress.make
 
-darknet_ros/CMakeFiles/darknet_ros_generate_messages_py: /home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros/msg/_BoundingBox.py
-darknet_ros/CMakeFiles/darknet_ros_generate_messages_py: /home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros/msg/__init__.py
+darknet_ros/CMakeFiles/darknet_ros_generate_messages_py: /home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros/msg/_BoundingBox.py
+darknet_ros/CMakeFiles/darknet_ros_generate_messages_py: /home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros/msg/__init__.py
 
 
-/home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros/msg/_BoundingBox.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros/msg/_BoundingBox.py: /home/ac-optimus/Desktop/catkin_ws/src/darknet_ros/msg/BoundingBox.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ac-optimus/Desktop/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG darknet_ros/BoundingBox"
-	cd /home/ac-optimus/Desktop/catkin_ws/build/darknet_ros && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ac-optimus/Desktop/catkin_ws/src/darknet_ros/msg/BoundingBox.msg -Idarknet_ros:/home/ac-optimus/Desktop/catkin_ws/src/darknet_ros/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p darknet_ros -o /home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros/msg
+/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros/msg/_BoundingBox.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros/msg/_BoundingBox.py: /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src/darknet_ros/msg/BoundingBox.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG darknet_ros/BoundingBox"
+	cd /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src/darknet_ros/msg/BoundingBox.msg -Idarknet_ros:/home/ac-optimus/deleteGit/darknet_ros_ntwoc/src/darknet_ros/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p darknet_ros -o /home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros/msg
 
-/home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros/msg/__init__.py: /home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros/msg/_BoundingBox.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ac-optimus/Desktop/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for darknet_ros"
-	cd /home/ac-optimus/Desktop/catkin_ws/build/darknet_ros && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros/msg --initpy
+/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros/msg/__init__.py: /home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros/msg/_BoundingBox.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for darknet_ros"
+	cd /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros/msg --initpy
 
 darknet_ros_generate_messages_py: darknet_ros/CMakeFiles/darknet_ros_generate_messages_py
-darknet_ros_generate_messages_py: /home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros/msg/_BoundingBox.py
-darknet_ros_generate_messages_py: /home/ac-optimus/Desktop/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros/msg/__init__.py
+darknet_ros_generate_messages_py: /home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros/msg/_BoundingBox.py
+darknet_ros_generate_messages_py: /home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/darknet_ros/msg/__init__.py
 darknet_ros_generate_messages_py: darknet_ros/CMakeFiles/darknet_ros_generate_messages_py.dir/build.make
 
 .PHONY : darknet_ros_generate_messages_py
@@ -80,10 +80,10 @@ darknet_ros/CMakeFiles/darknet_ros_generate_messages_py.dir/build: darknet_ros_g
 .PHONY : darknet_ros/CMakeFiles/darknet_ros_generate_messages_py.dir/build
 
 darknet_ros/CMakeFiles/darknet_ros_generate_messages_py.dir/clean:
-	cd /home/ac-optimus/Desktop/catkin_ws/build/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/darknet_ros_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/darknet_ros_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : darknet_ros/CMakeFiles/darknet_ros_generate_messages_py.dir/clean
 
 darknet_ros/CMakeFiles/darknet_ros_generate_messages_py.dir/depend:
-	cd /home/ac-optimus/Desktop/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ac-optimus/Desktop/catkin_ws/src /home/ac-optimus/Desktop/catkin_ws/src/darknet_ros /home/ac-optimus/Desktop/catkin_ws/build /home/ac-optimus/Desktop/catkin_ws/build/darknet_ros /home/ac-optimus/Desktop/catkin_ws/build/darknet_ros/CMakeFiles/darknet_ros_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src/darknet_ros /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros/CMakeFiles/darknet_ros_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : darknet_ros/CMakeFiles/darknet_ros_generate_messages_py.dir/depend
 

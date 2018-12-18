@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ac-optimus/Desktop/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ac-optimus/Desktop/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,9 +135,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ac-optimus/Desktop/catkin_ws/build/CMakeFiles /home/ac-optimus/Desktop/catkin_ws/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/CMakeFiles /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ac-optimus/Desktop/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -633,6 +633,175 @@ darknet_ros_generate_messages_eus/fast:
 	$(MAKE) -f darknet_ros/CMakeFiles/darknet_ros_generate_messages_eus.dir/build.make darknet_ros/CMakeFiles/darknet_ros_generate_messages_eus.dir/build
 .PHONY : darknet_ros_generate_messages_eus/fast
 
+#=============================================================================
+# Target rules for targets named subIntPub
+
+# Build rule for target.
+subIntPub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 subIntPub
+.PHONY : subIntPub
+
+# fast build rule for target.
+subIntPub/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/subIntPub.dir/build.make SubPubThread/CMakeFiles/subIntPub.dir/build
+.PHONY : subIntPub/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_nodejs
+
+# Build rule for target.
+sensor_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make SubPubThread/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_eus
+
+# Build rule for target.
+sensor_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make SubPubThread/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make SubPubThread/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make SubPubThread/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named numPub
+
+# Build rule for target.
+numPub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 numPub
+.PHONY : numPub
+
+# fast build rule for target.
+numPub/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/numPub.dir/build.make SubPubThread/CMakeFiles/numPub.dir/build
+.PHONY : numPub/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make SubPubThread/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_py
+
+# Build rule for target.
+geometry_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make SubPubThread/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named SubInt
+
+# Build rule for target.
+SubInt: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SubInt
+.PHONY : SubInt
+
+# fast build rule for target.
+SubInt/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/SubInt.dir/build.make SubPubThread/CMakeFiles/SubInt.dir/build
+.PHONY : SubInt/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_cpp
+
+# Build rule for target.
+geometry_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make SubPubThread/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_eus
+
+# Build rule for target.
+geometry_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_eus
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make SubPubThread/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make SubPubThread/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_nodejs
+
+# Build rule for target.
+geometry_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f SubPubThread/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make SubPubThread/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -682,6 +851,19 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... darknet_ros_generate_messages"
 	@echo "... darknet_ros_generate_messages_eus"
+	@echo "... subIntPub"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... numPub"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... SubInt"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_nodejs"
 .PHONY : help
 
 

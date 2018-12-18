@@ -7,4 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/ac-optimus/Desktop/catkin_ws/build"
+export CMAKE_PREFIX_PATH="/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD="/home/ac-optimus/deleteGit/darknet_ros_ntwoc/build"
+export PYTHONPATH="/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/ac-optimus/Desktop/catkin_ws/src:/home/ac-optimus/deleteGit/darknet_ros_ntwoc/src:$ROS_PACKAGE_PATH"

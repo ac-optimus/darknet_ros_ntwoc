@@ -1,2 +1,2 @@
-darknet_ros
--DCATKIN_DEVEL_PREFIX=/home/ac-optimus/Desktop/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ac-optimus/Desktop/catkin_ws/install -G Unix Makefiles
+SubPubThread:darknet_ros
+-DCATKIN_DEVEL_PREFIX=/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel -DCMAKE_INSTALL_PREFIX=/home/ac-optimus/deleteGit/darknet_ros_ntwoc/install -G Unix Makefiles

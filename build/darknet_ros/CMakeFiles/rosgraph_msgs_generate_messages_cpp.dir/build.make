@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ac-optimus/Desktop/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ac-optimus/Desktop/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ darknet_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build: rosgraph_m
 .PHONY : darknet_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 
 darknet_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	cd /home/ac-optimus/Desktop/catkin_ws/build/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : darknet_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 darknet_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend:
-	cd /home/ac-optimus/Desktop/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ac-optimus/Desktop/catkin_ws/src /home/ac-optimus/Desktop/catkin_ws/src/darknet_ros /home/ac-optimus/Desktop/catkin_ws/build /home/ac-optimus/Desktop/catkin_ws/build/darknet_ros /home/ac-optimus/Desktop/catkin_ws/build/darknet_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src/darknet_ros /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : darknet_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
 

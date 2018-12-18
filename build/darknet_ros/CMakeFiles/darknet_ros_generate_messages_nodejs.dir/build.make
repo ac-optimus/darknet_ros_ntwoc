@@ -43,26 +43,26 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ac-optimus/Desktop/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ac-optimus/Desktop/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build
 
 # Utility rule file for darknet_ros_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs.dir/progress.make
 
-darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs: /home/ac-optimus/Desktop/catkin_ws/devel/share/gennodejs/ros/darknet_ros/msg/BoundingBox.js
+darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs: /home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/share/gennodejs/ros/darknet_ros/msg/BoundingBox.js
 
 
-/home/ac-optimus/Desktop/catkin_ws/devel/share/gennodejs/ros/darknet_ros/msg/BoundingBox.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/ac-optimus/Desktop/catkin_ws/devel/share/gennodejs/ros/darknet_ros/msg/BoundingBox.js: /home/ac-optimus/Desktop/catkin_ws/src/darknet_ros/msg/BoundingBox.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ac-optimus/Desktop/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from darknet_ros/BoundingBox.msg"
-	cd /home/ac-optimus/Desktop/catkin_ws/build/darknet_ros && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ac-optimus/Desktop/catkin_ws/src/darknet_ros/msg/BoundingBox.msg -Idarknet_ros:/home/ac-optimus/Desktop/catkin_ws/src/darknet_ros/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p darknet_ros -o /home/ac-optimus/Desktop/catkin_ws/devel/share/gennodejs/ros/darknet_ros/msg
+/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/share/gennodejs/ros/darknet_ros/msg/BoundingBox.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/share/gennodejs/ros/darknet_ros/msg/BoundingBox.js: /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src/darknet_ros/msg/BoundingBox.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from darknet_ros/BoundingBox.msg"
+	cd /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src/darknet_ros/msg/BoundingBox.msg -Idarknet_ros:/home/ac-optimus/deleteGit/darknet_ros_ntwoc/src/darknet_ros/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p darknet_ros -o /home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/share/gennodejs/ros/darknet_ros/msg
 
 darknet_ros_generate_messages_nodejs: darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs
-darknet_ros_generate_messages_nodejs: /home/ac-optimus/Desktop/catkin_ws/devel/share/gennodejs/ros/darknet_ros/msg/BoundingBox.js
+darknet_ros_generate_messages_nodejs: /home/ac-optimus/deleteGit/darknet_ros_ntwoc/devel/share/gennodejs/ros/darknet_ros/msg/BoundingBox.js
 darknet_ros_generate_messages_nodejs: darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs.dir/build.make
 
 .PHONY : darknet_ros_generate_messages_nodejs
@@ -73,10 +73,10 @@ darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs.dir/build: darknet_r
 .PHONY : darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs.dir/build
 
 darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs.dir/clean:
-	cd /home/ac-optimus/Desktop/catkin_ws/build/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/darknet_ros_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/darknet_ros_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs.dir/clean
 
 darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs.dir/depend:
-	cd /home/ac-optimus/Desktop/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ac-optimus/Desktop/catkin_ws/src /home/ac-optimus/Desktop/catkin_ws/src/darknet_ros /home/ac-optimus/Desktop/catkin_ws/build /home/ac-optimus/Desktop/catkin_ws/build/darknet_ros /home/ac-optimus/Desktop/catkin_ws/build/darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src /home/ac-optimus/deleteGit/darknet_ros_ntwoc/src/darknet_ros /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros /home/ac-optimus/deleteGit/darknet_ros_ntwoc/build/darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : darknet_ros/CMakeFiles/darknet_ros_generate_messages_nodejs.dir/depend
 
