@@ -420,7 +420,7 @@ xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
 
 //catkin environment
 CATKIN_ENV:INTERNAL=/home/ac-optimus/darknet_ros_ntwoc/build/catkin_generated/env_cached.sh
-CATKIN_TEST_RESULTS_DIR:INTERNAL=/home/ac-optimus/Desktop/catkin_ws/build/test_results
+CATKIN_TEST_RESULTS_DIR:INTERNAL=/home/ac-optimus/darknet_ros_ntwoc/build/test_results
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -495,7 +495,7 @@ CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/ac-optimus/Desktop/catkin_ws/src
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/ac-optimus/darknet_ros_ntwoc/src
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

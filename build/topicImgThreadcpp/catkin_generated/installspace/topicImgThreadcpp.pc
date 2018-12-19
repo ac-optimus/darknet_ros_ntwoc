@@ -3,6 +3,6 @@ prefix=/home/ac-optimus/darknet_ros_ntwoc/install
 Name: topicImgThreadcpp
 Description: Description of topicImgThreadcpp
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/ac-optimus/darknet_ros_ntwoc/install/include
 Libs: -L/home/ac-optimus/darknet_ros_ntwoc/install/lib 
-Requires: 
+Requires: message_runtime roscpp std_msgs

@@ -1,0 +1,9 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/topicImgThreadcpp_generate_messages_lisp"
+  "/home/ac-optimus/darknet_ros_ntwoc/devel/share/common-lisp/ros/topicImgThreadcpp/msg/BoundingBox.lisp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/topicImgThreadcpp_generate_messages_lisp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

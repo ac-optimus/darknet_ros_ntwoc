@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from darknet_ros.msg import BoundingBox
+from pythonSubPub.msg import BoundingBox
 
 def DarknetOutput():
     #sample helper function.
