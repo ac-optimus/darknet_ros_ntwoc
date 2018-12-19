@@ -4,18 +4,53 @@
 #include <cv_bridge/cv_bridge.h>
 #include <thread>
 #include <mutex>
+#include "topicImgThreadcpp/BoundingBox.h"
+
+
 
 std::mutex m;
+std::mutex m1;
 cv::Mat image1; //shared resource
+topicImgThreadcpp::BoundingBox msgBox; //boundingBox
+
+
+void darknetyolo(void) 
+{
+    //takes the image and assigns the bounding box.
+  //  m1.lock();
+        msgBox.Class = "space";
+        msgBox.probability = 87;
+        msgBox.xmin = 0;        //dummy test case
+        msgBox.ymin = 0;
+        msgBox.xmax = 100;
+        msgBox.ymax = 100;
+   // m1.unlock();
+}
+
+
+void pubCordnts(ros::NodeHandle n)
+{
+    ros::Publisher pubBox = n.advertise<topicImgThreadcpp::BoundingBox>("BoxCord",1000);
+    ros::Rate rate(10);
+    while (n.ok())
+    {
+      //  m1.lock();
+        pubBox.publish(msgBox);
+        ROS_INFO("message sent...");
+     //   m.unlock();
+        rate.sleep();
+    }
+}
 
 void callback(const sensor_msgs::ImageConstPtr& msg) 
 {
     try
     {
-        m.lock();
+        //m.lock();
         image1 = cv_bridge::toCvCopy(msg,"bgr8")->image;
         //copy is necessary if you want to modify and then publish
-        m.unlock();
+      //  m.unlock();
+      
         ROS_INFO("image recieved.");
         cv::imshow("view",image1);
         cv::waitKey(3);
@@ -74,6 +109,8 @@ int main(int argc, char** argv)
     ros::NodeHandle nl;
     std::thread subImg(subThread,nl);
     std::thread pubImg(pubThread, nl);
+    std::thread yolo(darknetyolo);
+    std::thread BoundBoxPub(pubCordnts,nl);
     if (pubImg.joinable())
     {
         pubImg.join();
@@ -81,5 +118,13 @@ int main(int argc, char** argv)
     if (subImg.joinable())
     {
         subImg.join();
+    }
+    if (BoundBoxPub.joinable())
+    {
+        BoundBoxPub.join();
+    }
+    if (yolo.joinable())
+    {
+        yolo.join();
     }
  }
