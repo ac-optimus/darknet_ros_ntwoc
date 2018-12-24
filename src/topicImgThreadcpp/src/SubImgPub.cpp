@@ -18,7 +18,7 @@ void darknetyolo(void)
 {
     //takes the image and assigns the bounding box.
   //  m1.lock();
-        msgBox.Class = "space";
+        msgBox.Class = 0;
         msgBox.probability = 87;
         msgBox.xmin = 0;        //dummy test case
         msgBox.ymin = 0;

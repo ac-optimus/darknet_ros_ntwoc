@@ -9,7 +9,7 @@ void callback(const sensor_msgs::ImageConstPtr& msg) //why const here and a reff
     try
     {
         cv::imshow("ImageRecieved",cv_bridge::toCvShare(msg,"bgr8")->image);
-        cv::waitKey(30);
+        cv::waitKey(6000);
         ROS_INFO("image recieved.");
         
     }

@@ -241,6 +241,9 @@ target_link_libraries(ImgSub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 add_executable(subImgPub src/SubImgPub.cpp)
 target_link_libraries(subImgPub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 
+#add_executable(example src/imageExample.cpp)
+#target_link_libraries(example ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+
 
 add_executable(main 
 darknet/activation_kernels.cu     darknet/deconvolutional_kernels.cu  darknet/normalization_layer.c
@@ -283,7 +286,7 @@ darknet/crop_layer.h              darknet/maxpool_layer.c             darknet/yo
 darknet/crop_layer_kernels.cu     darknet/maxpool_layer.h             
 darknet/cuda.c                    darknet/maxpool_layer_kernels.cu    darknet/yolo_layer.c
 darknet/cuda.h                    darknet/network.c                   darknet/yolo_layer.h
-src/image_detectOnly.cpp                 darknet/network.h                   
+src/imageExample.cpp              darknet/network.h                   
 darknet/data.c                    darknet/network_kernels.cu          src/yolo_v2_class.cpp
 darknet/data.h                    darknet/nightmare.c                 src/yolo_v2_class.hpp
 )
