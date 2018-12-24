@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ImgPub.dir/src/ImgPub.cpp.o"
-  "/home/ac-optimus/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/ImgPub.pdb"
-  "/home/ac-optimus/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/ImgPub"
+  "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/ImgPub.pdb"
+  "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/ImgPub"
 )
 
 # Per-language clean rules from dependency scanning.

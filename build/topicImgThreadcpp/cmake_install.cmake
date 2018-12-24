@@ -1,8 +1,8 @@
-# Install script for directory: /home/ac-optimus/darknet_ros_ntwoc/src/topicImgThreadcpp
+# Install script for directory: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ac-optimus/darknet_ros_ntwoc/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ac-optimus/video/darknet_ros_ntwoc/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,53 +33,53 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topicImgThreadcpp/msg" TYPE FILE FILES "/home/ac-optimus/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topicImgThreadcpp/msg" TYPE FILE FILES "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topicImgThreadcpp/cmake" TYPE FILE FILES "/home/ac-optimus/darknet_ros_ntwoc/build/topicImgThreadcpp/catkin_generated/installspace/topicImgThreadcpp-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topicImgThreadcpp/cmake" TYPE FILE FILES "/home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp/catkin_generated/installspace/topicImgThreadcpp-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ac-optimus/darknet_ros_ntwoc/devel/include/topicImgThreadcpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ac-optimus/video/darknet_ros_ntwoc/devel/include/topicImgThreadcpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ac-optimus/darknet_ros_ntwoc/devel/share/roseus/ros/topicImgThreadcpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ac-optimus/video/darknet_ros_ntwoc/devel/share/roseus/ros/topicImgThreadcpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ac-optimus/darknet_ros_ntwoc/devel/share/common-lisp/ros/topicImgThreadcpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ac-optimus/video/darknet_ros_ntwoc/devel/share/common-lisp/ros/topicImgThreadcpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ac-optimus/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/ac-optimus/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/topicImgThreadcpp")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/topicImgThreadcpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/ac-optimus/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/topicImgThreadcpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/topicImgThreadcpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ac-optimus/darknet_ros_ntwoc/build/topicImgThreadcpp/catkin_generated/installspace/topicImgThreadcpp.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp/catkin_generated/installspace/topicImgThreadcpp.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topicImgThreadcpp/cmake" TYPE FILE FILES "/home/ac-optimus/darknet_ros_ntwoc/build/topicImgThreadcpp/catkin_generated/installspace/topicImgThreadcpp-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topicImgThreadcpp/cmake" TYPE FILE FILES "/home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp/catkin_generated/installspace/topicImgThreadcpp-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topicImgThreadcpp/cmake" TYPE FILE FILES
-    "/home/ac-optimus/darknet_ros_ntwoc/build/topicImgThreadcpp/catkin_generated/installspace/topicImgThreadcppConfig.cmake"
-    "/home/ac-optimus/darknet_ros_ntwoc/build/topicImgThreadcpp/catkin_generated/installspace/topicImgThreadcppConfig-version.cmake"
+    "/home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp/catkin_generated/installspace/topicImgThreadcppConfig.cmake"
+    "/home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp/catkin_generated/installspace/topicImgThreadcppConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topicImgThreadcpp" TYPE FILE FILES "/home/ac-optimus/darknet_ros_ntwoc/src/topicImgThreadcpp/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topicImgThreadcpp" TYPE FILE FILES "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/package.xml")
 endif()
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ac-optimus/darknet_ros_ntwoc/src/topicImgThreadcpp/src/SubIntPub.cpp
+/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/SubIntPub.cpp
 ros/ros.h
 -
 std_msgs/Int32.h

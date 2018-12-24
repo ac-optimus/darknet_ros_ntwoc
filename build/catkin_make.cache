@@ -1,2 +1,2 @@
 pythonSubPub:topicImgThreadcpp
--DCATKIN_DEVEL_PREFIX=/home/ac-optimus/darknet_ros_ntwoc/devel -DCMAKE_INSTALL_PREFIX=/home/ac-optimus/darknet_ros_ntwoc/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/ac-optimus/video/darknet_ros_ntwoc/devel -DCMAKE_INSTALL_PREFIX=/home/ac-optimus/video/darknet_ros_ntwoc/install -G Unix Makefiles

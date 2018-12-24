@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PubInt.dir/src/PubInt.cpp.o"
-  "/home/ac-optimus/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/PubInt.pdb"
-  "/home/ac-optimus/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/PubInt"
+  "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/PubInt.pdb"
+  "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/PubInt"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
-prefix=/home/ac-optimus/darknet_ros_ntwoc/devel
+prefix=/home/ac-optimus/video/darknet_ros_ntwoc/devel
 
 Name: pythonSubPub
 Description: Description of pythonSubPub
 Version: 0.0.0
-Cflags: -I/home/ac-optimus/darknet_ros_ntwoc/devel/include
-Libs: -L/home/ac-optimus/darknet_ros_ntwoc/devel/lib 
+Cflags: -I/home/ac-optimus/video/darknet_ros_ntwoc/devel/include
+Libs: -L/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib 
 Requires: message_runtime roscpp rospy std_msgs

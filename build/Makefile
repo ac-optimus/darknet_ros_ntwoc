@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ac-optimus/darknet_ros_ntwoc/src
+CMAKE_SOURCE_DIR = /home/ac-optimus/video/darknet_ros_ntwoc/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ac-optimus/darknet_ros_ntwoc/build
+CMAKE_BINARY_DIR = /home/ac-optimus/video/darknet_ros_ntwoc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,9 +135,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ac-optimus/darknet_ros_ntwoc/build/CMakeFiles /home/ac-optimus/darknet_ros_ntwoc/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles /home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ac-optimus/darknet_ros_ntwoc/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -712,6 +712,19 @@ topicImgThreadcpp_generate_messages_eus/fast:
 .PHONY : topicImgThreadcpp_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -1052,6 +1065,7 @@ help:
 	@echo "... topicImgThreadcpp_geneus"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... topicImgThreadcpp_generate_messages_eus"
+	@echo "... main"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... topicImgThreadcpp_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"

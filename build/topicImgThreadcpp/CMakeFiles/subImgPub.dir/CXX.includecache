@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ac-optimus/darknet_ros_ntwoc/devel/include/topicImgThreadcpp/BoundingBox.h
+/home/ac-optimus/video/darknet_ros_ntwoc/devel/include/topicImgThreadcpp/BoundingBox.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/ac-optimus/darknet_ros_ntwoc/src/topicImgThreadcpp/src/SubImgPub.cpp
+/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/SubImgPub.cpp
 ros/ros.h
 -
 image_transport/image_transport.h
@@ -36,7 +36,7 @@ thread
 mutex
 -
 topicImgThreadcpp/BoundingBox.h
-/home/ac-optimus/darknet_ros_ntwoc/src/topicImgThreadcpp/src/topicImgThreadcpp/BoundingBox.h
+/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/topicImgThreadcpp/BoundingBox.h
 
 /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h
