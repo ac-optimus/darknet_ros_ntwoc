@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/ac-optimus/video/darknet_ros_ntwoc/build
 include topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/progress.make
 
 topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs: /home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg/BoundingBox.js
+topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs: /home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg/BoundingBoxArray.js
 
 
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg/BoundingBox.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
@@ -61,8 +62,15 @@ topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs: /home/a
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from topicImgThreadcpp/BoundingBox.msg"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg -ItopicImgThreadcpp:/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p topicImgThreadcpp -o /home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg
 
+/home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg/BoundingBoxArray.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg/BoundingBoxArray.js: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg
+/home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg/BoundingBoxArray.js: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from topicImgThreadcpp/BoundingBoxArray.msg"
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg -ItopicImgThreadcpp:/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p topicImgThreadcpp -o /home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg
+
 topicImgThreadcpp_generate_messages_nodejs: topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs
 topicImgThreadcpp_generate_messages_nodejs: /home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg/BoundingBox.js
+topicImgThreadcpp_generate_messages_nodejs: /home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg/BoundingBoxArray.js
 topicImgThreadcpp_generate_messages_nodejs: topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/build.make
 
 .PHONY : topicImgThreadcpp_generate_messages_nodejs

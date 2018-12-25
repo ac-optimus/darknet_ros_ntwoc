@@ -15,6 +15,16 @@ opencv2/highgui/highgui.hpp
 -
 cv_bridge/cv_bridge.h
 -
+iostream
+-
+vector
+-
+string
+-
+fstream
+-
+unistd.h
+-
 
 /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h

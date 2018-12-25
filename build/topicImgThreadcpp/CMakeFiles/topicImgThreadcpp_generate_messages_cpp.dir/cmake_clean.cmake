@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/topicImgThreadcpp_generate_messages_cpp"
   "/home/ac-optimus/video/darknet_ros_ntwoc/devel/include/topicImgThreadcpp/BoundingBox.h"
+  "/home/ac-optimus/video/darknet_ros_ntwoc/devel/include/topicImgThreadcpp/BoundingBoxArray.h"
 )
 
 # Per-language clean rules from dependency scanning.

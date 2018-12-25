@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/src/imageExample.cpp.o"
   "CMakeFiles/main.dir/darknet/normalization_layer.c.o"
   "CMakeFiles/main.dir/darknet/activation_layer.c.o"
   "CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o"
@@ -60,7 +61,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/darknet/cuda.c.o"
   "CMakeFiles/main.dir/darknet/yolo_layer.c.o"
   "CMakeFiles/main.dir/darknet/network.c.o"
-  "CMakeFiles/main.dir/src/image_detectOnly.cpp.o"
   "CMakeFiles/main.dir/darknet/data.c.o"
   "CMakeFiles/main.dir/src/yolo_v2_class.cpp.o"
   "CMakeFiles/main.dir/darknet/nightmare.c.o"

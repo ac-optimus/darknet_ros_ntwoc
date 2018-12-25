@@ -6,9 +6,7 @@ project(topicImgThreadcpp)
 
 set(OPENCV 1)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
+
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   image_transport
@@ -22,7 +20,6 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(Boost REQUIRED)
 find_package(Boost REQUIRED COMPONENTS thread)
 
-## System dependencies are found with CMake's conventions
 find_package(OpenCV)
 
 
@@ -59,7 +56,8 @@ find_package(OpenCV)
 add_message_files(
    FILES
    BoundingBox.msg
-#   Message2.msg
+   BoundingBoxArray.msg
+  # msg1.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -217,35 +215,14 @@ catkin_package(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(PubInt src/PubInt.cpp)
-target_link_libraries(PubInt ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
-
-#add_executable(try darknet/includeTry.cpp )
-#target_link_libraries(try ${catkin_LIBRARIES}   ${OpenCV_LIBRARIES} ${Boost_LIBRARIES})
-
-add_executable(SubInt src/SubInt.cpp)
-target_link_libraries(SubInt ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
-
-message("Boost_INCLUDE_DIRS: " ${Boost_INCLUDE_DIRS})   #great usage function
-
-add_executable(subIntPub src/SubIntPub.cpp)
-target_link_libraries(subIntPub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
-
-add_executable(ImgPub src/ImgPub.cpp)
-target_link_libraries(ImgPub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 
 
-add_executable(ImgSub src/ImgSub.cpp)
-target_link_libraries(ImgSub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 
-add_executable(subImgPub src/SubImgPub.cpp)
-target_link_libraries(subImgPub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
-
-#add_executable(example src/imageExample.cpp)
-#target_link_libraries(example ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+message("${${PROJECT_NAME}_EXPORTED_TARGETS}: " ${catkin__EXPORTED_TARGETS})   #great usage function
 
 
-add_executable(main 
+
+add_executable(main  src/imageExample.cpp 
 darknet/activation_kernels.cu     darknet/deconvolutional_kernels.cu  darknet/normalization_layer.c
 darknet/activation_layer.c        darknet/deconvolutional_layer.c     darknet/normalization_layer.h
 darknet/activation_layer.h        darknet/deconvolutional_layer.h     darknet/option_list.c
@@ -286,10 +263,53 @@ darknet/crop_layer.h              darknet/maxpool_layer.c             darknet/yo
 darknet/crop_layer_kernels.cu     darknet/maxpool_layer.h             
 darknet/cuda.c                    darknet/maxpool_layer_kernels.cu    darknet/yolo_layer.c
 darknet/cuda.h                    darknet/network.c                   darknet/yolo_layer.h
-src/imageExample.cpp              darknet/network.h                   
+                                  darknet/network.h                   
 darknet/data.c                    darknet/network_kernels.cu          src/yolo_v2_class.cpp
 darknet/data.h                    darknet/nightmare.c                 src/yolo_v2_class.hpp
 )
 
 target_link_libraries(main ${catkin_LIBRARIES} ${OpenCV_LIBRARIES}  ${Boost_LIBRARIES} )
+add_dependencies(main ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+
+
+
+if (FALSE)
+
+
+add_executable(try src/customMsg.cpp )
+target_link_libraries(try ${catkin_LIBRARIES}   ${OpenCV_LIBRARIES} ${Boost_LIBRARIES})
+add_dependencies(try ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(sub src/customMsgSub.cpp )
+target_link_libraries(sub ${catkin_LIBRARIES}   ${OpenCV_LIBRARIES} ${Boost_LIBRARIES})
+add_dependencies(sub ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(PubInt src/PubInt.cpp)
+target_link_libraries(PubInt ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+
+
+
+add_executable(SubInt src/SubInt.cpp)
+target_link_libraries(SubInt ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+
+
+add_executable(subIntPub src/SubIntPub.cpp)
+target_link_libraries(subIntPub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+
+add_executable(ImgPub src/ImgPub.cpp)
+target_link_libraries(ImgPub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+
+
+add_executable(ImgSub src/ImgSub.cpp)
+target_link_libraries(ImgSub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+
+add_executable(subImgPub src/SubImgPub.cpp)
+target_link_libraries(subImgPub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+
+
+#add_executable(example src/imageExample.cpp)
+#target_link_libraries(example ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+
+
+endif()

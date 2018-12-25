@@ -3,5 +3,9 @@
   (:export
    "<BOUNDINGBOX>"
    "BOUNDINGBOX"
+   "<BOUNDINGBOXARRAY>"
+   "BOUNDINGBOXARRAY"
+   "<MSG1>"
+   "MSG1"
   ))
 

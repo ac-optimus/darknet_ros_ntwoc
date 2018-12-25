@@ -33,7 +33,10 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topicImgThreadcpp/msg" TYPE FILE FILES "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topicImgThreadcpp/msg" TYPE FILE FILES
+    "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg"
+    "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg"
+    )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

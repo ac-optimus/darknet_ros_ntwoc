@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg"
+messages_str = "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg;/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg"
 services_str = ""
 pkg_name = "topicImgThreadcpp"
 dependencies_str = "std_msgs"

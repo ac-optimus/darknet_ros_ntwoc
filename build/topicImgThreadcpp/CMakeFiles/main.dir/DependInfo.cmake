@@ -87,7 +87,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/http_stream.cpp" "/home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp/CMakeFiles/main.dir/darknet/http_stream.cpp.o"
-  "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/image_detectOnly.cpp" "/home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o"
+  "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/imageExample.cpp" "/home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o"
   "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/yolo_v2_class.cpp" "/home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

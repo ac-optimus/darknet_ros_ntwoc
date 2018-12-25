@@ -7,10 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/ac-optimus/video/darknet_ros_ntwoc/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PKG_CONFIG_PATH="/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
 export PWD="/home/ac-optimus/video/darknet_ros_ntwoc/build"
-export PYTHONPATH="/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/ac-optimus/video/darknet_ros_ntwoc/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/ac-optimus/Desktop/catkin_ws/src:/home/ac-optimus/deleteGit/darknet_ros_ntwoc/src:/home/ac-optimus/darknet_ros_ntwoc/src:/home/ac-optimus/video/darknet_ros_ntwoc/src:$ROS_PACKAGE_PATH"
+export PYTHONPATH="/opt/ros/kinetic/lib/python2.7/dist-packages"

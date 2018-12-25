@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "topicImgThreadcpp: 1 messages, 0 services")
+message(STATUS "topicImgThreadcpp: 2 messages, 0 services")
 
 set(MSG_I_FLAGS "-ItopicImgThreadcpp:/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_topicImgThreadcpp_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "topicImgThreadcpp" "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg" ""
 )
 
+get_filename_component(_filename "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg" NAME_WE)
+add_custom_target(_topicImgThreadcpp_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "topicImgThreadcpp" "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg" "topicImgThreadcpp/BoundingBox"
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -32,6 +37,12 @@ _generate_msg_cpp(topicImgThreadcpp
   "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/topicImgThreadcpp
+)
+_generate_msg_cpp(topicImgThreadcpp
+  "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/topicImgThreadcpp
 )
 
@@ -51,6 +62,8 @@ add_dependencies(topicImgThreadcpp_generate_messages topicImgThreadcpp_generate_
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg" NAME_WE)
 add_dependencies(topicImgThreadcpp_generate_messages_cpp _topicImgThreadcpp_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg" NAME_WE)
+add_dependencies(topicImgThreadcpp_generate_messages_cpp _topicImgThreadcpp_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(topicImgThreadcpp_gencpp)
@@ -65,6 +78,12 @@ _generate_msg_eus(topicImgThreadcpp
   "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/topicImgThreadcpp
+)
+_generate_msg_eus(topicImgThreadcpp
+  "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/topicImgThreadcpp
 )
 
@@ -84,6 +103,8 @@ add_dependencies(topicImgThreadcpp_generate_messages topicImgThreadcpp_generate_
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg" NAME_WE)
 add_dependencies(topicImgThreadcpp_generate_messages_eus _topicImgThreadcpp_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg" NAME_WE)
+add_dependencies(topicImgThreadcpp_generate_messages_eus _topicImgThreadcpp_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(topicImgThreadcpp_geneus)
@@ -98,6 +119,12 @@ _generate_msg_lisp(topicImgThreadcpp
   "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/topicImgThreadcpp
+)
+_generate_msg_lisp(topicImgThreadcpp
+  "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/topicImgThreadcpp
 )
 
@@ -117,6 +144,8 @@ add_dependencies(topicImgThreadcpp_generate_messages topicImgThreadcpp_generate_
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg" NAME_WE)
 add_dependencies(topicImgThreadcpp_generate_messages_lisp _topicImgThreadcpp_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg" NAME_WE)
+add_dependencies(topicImgThreadcpp_generate_messages_lisp _topicImgThreadcpp_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(topicImgThreadcpp_genlisp)
@@ -131,6 +160,12 @@ _generate_msg_nodejs(topicImgThreadcpp
   "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/topicImgThreadcpp
+)
+_generate_msg_nodejs(topicImgThreadcpp
+  "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/topicImgThreadcpp
 )
 
@@ -150,6 +185,8 @@ add_dependencies(topicImgThreadcpp_generate_messages topicImgThreadcpp_generate_
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg" NAME_WE)
 add_dependencies(topicImgThreadcpp_generate_messages_nodejs _topicImgThreadcpp_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg" NAME_WE)
+add_dependencies(topicImgThreadcpp_generate_messages_nodejs _topicImgThreadcpp_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(topicImgThreadcpp_gennodejs)
@@ -164,6 +201,12 @@ _generate_msg_py(topicImgThreadcpp
   "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/topicImgThreadcpp
+)
+_generate_msg_py(topicImgThreadcpp
+  "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/topicImgThreadcpp
 )
 
@@ -182,6 +225,8 @@ add_dependencies(topicImgThreadcpp_generate_messages topicImgThreadcpp_generate_
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBox.msg" NAME_WE)
+add_dependencies(topicImgThreadcpp_generate_messages_py _topicImgThreadcpp_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/msg/BoundingBoxArray.msg" NAME_WE)
 add_dependencies(topicImgThreadcpp_generate_messages_py _topicImgThreadcpp_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

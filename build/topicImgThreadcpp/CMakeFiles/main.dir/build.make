@@ -57,9 +57,33 @@ include topicImgThreadcpp/CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 
+topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
+topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/imageExample.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o"
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/imageExample.cpp.o -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/imageExample.cpp
+
+topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/imageExample.cpp.i"
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/imageExample.cpp > CMakeFiles/main.dir/src/imageExample.cpp.i
+
+topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/imageExample.cpp.s"
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/imageExample.cpp -o CMakeFiles/main.dir/src/imageExample.cpp.s
+
+topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.requires:
+
+.PHONY : topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.requires
+
+topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.provides: topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.requires
+	$(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.provides.build
+.PHONY : topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.provides
+
+topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.provides.build: topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o
+
+
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/normalization_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/normalization_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/normalization_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/normalization_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/normalization_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/normalization_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/normalization_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/normalization_layer.c.i: cmake_force
@@ -83,7 +107,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/normalization_layer.c.o.provides.b
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/activation_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/activation_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/activation_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/activation_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/activation_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/activation_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/activation_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/activation_layer.c.i: cmake_force
@@ -107,7 +131,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/activation_layer.c.o.provides.buil
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/deconvolutional_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/deconvolutional_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/deconvolutional_layer.c.i: cmake_force
@@ -131,7 +155,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o.provides
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/option_list.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/option_list.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/option_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/option_list.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/option_list.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/option_list.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/option_list.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/option_list.c.i: cmake_force
@@ -155,7 +179,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/option_list.c.o.provides.build: to
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/activations.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/activations.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/activations.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/activations.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/activations.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/activations.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/activations.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/activations.c.i: cmake_force
@@ -179,7 +203,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/activations.c.o.provides.build: to
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/demo.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/demo.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/demo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/demo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/demo.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/demo.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/demo.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/demo.c.i: cmake_force
@@ -203,7 +227,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/demo.c.o.provides.build: topicImgT
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/parser.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/parser.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/parser.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/parser.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/parser.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/parser.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/parser.c.i: cmake_force
@@ -227,7 +251,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/parser.c.o.provides.build: topicIm
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/art.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/art.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/art.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/art.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/art.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/art.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/art.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/art.c.i: cmake_force
@@ -251,7 +275,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/art.c.o.provides.build: topicImgTh
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/detection_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/detection_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/detection_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/detection_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/detection_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/detection_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/detection_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/detection_layer.c.i: cmake_force
@@ -275,7 +299,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/detection_layer.c.o.provides.build
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/avgpool_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/avgpool_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/avgpool_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/avgpool_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/avgpool_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/avgpool_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/avgpool_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/avgpool_layer.c.i: cmake_force
@@ -299,7 +323,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/avgpool_layer.c.o.provides.build: 
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/region_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/region_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/region_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/region_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/region_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/region_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/region_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/region_layer.c.i: cmake_force
@@ -323,7 +347,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/region_layer.c.o.provides.build: t
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/detector.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/detector.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/detector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/detector.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/detector.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/detector.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/detector.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/detector.c.i: cmake_force
@@ -347,7 +371,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/detector.c.o.provides.build: topic
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/dice.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/dice.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/dice.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/dice.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/dice.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/dice.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/dice.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/dice.c.i: cmake_force
@@ -371,7 +395,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/dice.c.o.provides.build: topicImgT
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/reorg_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/reorg_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/reorg_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/reorg_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/reorg_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/reorg_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/reorg_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/reorg_layer.c.i: cmake_force
@@ -395,7 +419,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/reorg_layer.c.o.provides.build: to
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/batchnorm_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/batchnorm_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/batchnorm_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/batchnorm_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/batchnorm_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/batchnorm_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/batchnorm_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/batchnorm_layer.c.i: cmake_force
@@ -419,7 +443,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/batchnorm_layer.c.o.provides.build
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/dropout_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/dropout_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/dropout_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/dropout_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/dropout_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/dropout_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/dropout_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/dropout_layer.c.i: cmake_force
@@ -443,7 +467,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/dropout_layer.c.o.provides.build: 
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/reorg_old_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/reorg_old_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/reorg_old_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/reorg_old_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/reorg_old_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/reorg_old_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/reorg_old_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/reorg_old_layer.c.i: cmake_force
@@ -467,7 +491,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/reorg_old_layer.c.o.provides.build
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/blas.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/blas.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/blas.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/blas.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/blas.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/blas.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/blas.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/blas.c.i: cmake_force
@@ -491,7 +515,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/blas.c.o.provides.build: topicImgT
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/gemm.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/gemm.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/gemm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/gemm.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/gemm.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/gemm.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/gemm.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/gemm.c.i: cmake_force
@@ -515,7 +539,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/gemm.c.o.provides.build: topicImgT
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/rnn.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/rnn.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/rnn.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn.c.i: cmake_force
@@ -539,7 +563,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn.c.o.provides.build: topicImgTh
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/rnn_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/rnn_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/rnn_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn_layer.c.i: cmake_force
@@ -563,7 +587,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn_layer.c.o.provides.build: topi
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/box.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/box.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/box.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/box.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/box.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/box.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/box.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/box.c.i: cmake_force
@@ -587,7 +611,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/box.c.o.provides.build: topicImgTh
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/getopt.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/getopt.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/getopt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/getopt.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/getopt.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/getopt.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/getopt.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/getopt.c.i: cmake_force
@@ -611,7 +635,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/getopt.c.o.provides.build: topicIm
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn_vid.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn_vid.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/rnn_vid.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn_vid.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn_vid.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/rnn_vid.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/rnn_vid.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn_vid.c.i: cmake_force
@@ -635,7 +659,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/rnn_vid.c.o.provides.build: topicI
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/captcha.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/captcha.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/captcha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/captcha.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/captcha.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/captcha.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/captcha.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/captcha.c.i: cmake_force
@@ -659,7 +683,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/captcha.c.o.provides.build: topicI
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/route_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/route_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/route_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/route_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/route_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/route_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/route_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/route_layer.c.i: cmake_force
@@ -683,7 +707,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/route_layer.c.o.provides.build: to
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/cifar.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/cifar.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/cifar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/cifar.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/cifar.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/cifar.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/cifar.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/cifar.c.i: cmake_force
@@ -707,7 +731,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/cifar.c.o.provides.build: topicImg
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/classifier.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/classifier.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/classifier.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/classifier.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/classifier.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/classifier.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/classifier.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/classifier.c.i: cmake_force
@@ -731,7 +755,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/classifier.c.o.provides.build: top
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/go.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/go.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/go.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/go.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/go.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/go.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/go.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/go.c.i: cmake_force
@@ -755,7 +779,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/go.c.o.provides.build: topicImgThr
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/shortcut_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/shortcut_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/shortcut_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/shortcut_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/shortcut_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/shortcut_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/shortcut_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/shortcut_layer.c.i: cmake_force
@@ -779,7 +803,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/shortcut_layer.c.o.provides.build:
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/gru_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/gru_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/gru_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/gru_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/gru_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/gru_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/gru_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/gru_layer.c.i: cmake_force
@@ -803,7 +827,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/gru_layer.c.o.provides.build: topi
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/coco.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/coco.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/coco.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/coco.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/coco.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/coco.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/coco.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/coco.c.i: cmake_force
@@ -827,7 +851,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/coco.c.o.provides.build: topicImgT
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/softmax_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/softmax_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/softmax_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/softmax_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/softmax_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/softmax_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/softmax_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/softmax_layer.c.i: cmake_force
@@ -851,7 +875,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/softmax_layer.c.o.provides.build: 
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/col2im.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/col2im.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/col2im.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/col2im.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/col2im.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/col2im.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/col2im.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/col2im.c.i: cmake_force
@@ -875,7 +899,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/col2im.c.o.provides.build: topicIm
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/http_stream.cpp.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/http_stream.cpp.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/http_stream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object topicImgThreadcpp/CMakeFiles/main.dir/darknet/http_stream.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object topicImgThreadcpp/CMakeFiles/main.dir/darknet/http_stream.cpp.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/darknet/http_stream.cpp.o -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/http_stream.cpp
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/http_stream.cpp.i: cmake_force
@@ -899,7 +923,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/http_stream.cpp.o.provides.build: 
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/im2col.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/im2col.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/im2col.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/im2col.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/im2col.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/im2col.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/im2col.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/im2col.c.i: cmake_force
@@ -923,7 +947,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/im2col.c.o.provides.build: topicIm
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/compare.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/compare.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/compare.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/compare.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/compare.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/compare.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/compare.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/compare.c.i: cmake_force
@@ -947,7 +971,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/compare.c.o.provides.build: topicI
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/super.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/super.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/super.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/super.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/super.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/super.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/super.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/super.c.i: cmake_force
@@ -971,7 +995,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/super.c.o.provides.build: topicImg
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/connected_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/connected_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/connected_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/connected_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/connected_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/connected_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/connected_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/connected_layer.c.i: cmake_force
@@ -995,7 +1019,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/connected_layer.c.o.provides.build
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/swag.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/swag.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/swag.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/swag.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/swag.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/swag.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/swag.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/swag.c.i: cmake_force
@@ -1019,7 +1043,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/swag.c.o.provides.build: topicImgT
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/image.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/image.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/image.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/image.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/image.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/image.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/image.c.i: cmake_force
@@ -1043,7 +1067,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/image.c.o.provides.build: topicImg
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/tag.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/tag.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/tag.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/tag.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/tag.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/tag.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/tag.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/tag.c.i: cmake_force
@@ -1067,7 +1091,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/tag.c.o.provides.build: topicImgTh
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/tree.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/tree.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/tree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/tree.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/tree.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/tree.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/tree.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/tree.c.i: cmake_force
@@ -1091,7 +1115,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/tree.c.o.provides.build: topicImgT
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/convolutional_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/convolutional_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/convolutional_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/convolutional_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/convolutional_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/convolutional_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/convolutional_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/convolutional_layer.c.i: cmake_force
@@ -1115,7 +1139,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/convolutional_layer.c.o.provides.b
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/layer.c.i: cmake_force
@@ -1139,7 +1163,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/layer.c.o.provides.build: topicImg
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/cost_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/cost_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/cost_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/cost_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/cost_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/cost_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/cost_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/cost_layer.c.i: cmake_force
@@ -1163,7 +1187,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/cost_layer.c.o.provides.build: top
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/list.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/list.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/list.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/list.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/list.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/list.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/list.c.i: cmake_force
@@ -1187,7 +1211,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/list.c.o.provides.build: topicImgT
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/upsample_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/upsample_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/upsample_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/upsample_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/upsample_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/upsample_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/upsample_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/upsample_layer.c.i: cmake_force
@@ -1211,7 +1235,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/upsample_layer.c.o.provides.build:
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/cpu_gemm.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/cpu_gemm.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/cpu_gemm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/cpu_gemm.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/cpu_gemm.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/cpu_gemm.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/cpu_gemm.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/cpu_gemm.c.i: cmake_force
@@ -1235,7 +1259,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/cpu_gemm.c.o.provides.build: topic
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/local_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/local_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/local_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/local_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/local_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/local_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/local_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/local_layer.c.i: cmake_force
@@ -1259,7 +1283,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/local_layer.c.o.provides.build: to
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/utils.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/utils.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/utils.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/utils.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/utils.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/utils.c.i: cmake_force
@@ -1283,7 +1307,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/utils.c.o.provides.build: topicImg
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/crnn_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/crnn_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/crnn_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/crnn_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/crnn_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/crnn_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/crnn_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/crnn_layer.c.i: cmake_force
@@ -1307,7 +1331,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/crnn_layer.c.o.provides.build: top
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/matrix.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/matrix.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/matrix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/matrix.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/matrix.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/matrix.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/matrix.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/matrix.c.i: cmake_force
@@ -1331,7 +1355,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/matrix.c.o.provides.build: topicIm
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/voxel.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/voxel.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/voxel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/voxel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/voxel.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/voxel.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/voxel.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/voxel.c.i: cmake_force
@@ -1355,7 +1379,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/voxel.c.o.provides.build: topicImg
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/crop_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/crop_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/crop_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/crop_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/crop_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/crop_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/crop_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/crop_layer.c.i: cmake_force
@@ -1379,7 +1403,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/crop_layer.c.o.provides.build: top
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/writing.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/writing.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/writing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/writing.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/writing.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/writing.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/writing.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/writing.c.i: cmake_force
@@ -1403,7 +1427,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/writing.c.o.provides.build: topicI
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/maxpool_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/maxpool_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/maxpool_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/maxpool_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/maxpool_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/maxpool_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/maxpool_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/maxpool_layer.c.i: cmake_force
@@ -1427,7 +1451,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/maxpool_layer.c.o.provides.build: 
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/yolo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/yolo.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/yolo.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo.c.i: cmake_force
@@ -1451,7 +1475,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo.c.o.provides.build: topicImgT
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/cuda.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/cuda.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/cuda.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/cuda.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/cuda.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/cuda.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/cuda.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/cuda.c.i: cmake_force
@@ -1475,7 +1499,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/cuda.c.o.provides.build: topicImgT
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_layer.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/yolo_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_layer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_layer.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/yolo_layer.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/yolo_layer.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_layer.c.i: cmake_force
@@ -1499,7 +1523,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_layer.c.o.provides.build: top
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/network.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.o"
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main.dir/darknet/network.c.o   -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/network.c
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.i: cmake_force
@@ -1519,30 +1543,6 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.o.provides: topicImgThre
 .PHONY : topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.o.provides
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.o.provides.build: topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.o
-
-
-topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
-topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/image_detectOnly.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o"
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/image_detectOnly.cpp.o -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/image_detectOnly.cpp
-
-topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/image_detectOnly.cpp.i"
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/image_detectOnly.cpp > CMakeFiles/main.dir/src/image_detectOnly.cpp.i
-
-topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/image_detectOnly.cpp.s"
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/image_detectOnly.cpp -o CMakeFiles/main.dir/src/image_detectOnly.cpp.s
-
-topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o.requires:
-
-.PHONY : topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o.requires
-
-topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o.provides: topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o.requires
-	$(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o.provides.build
-.PHONY : topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o.provides
-
-topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o.provides.build: topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o
 
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/data.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
@@ -1619,6 +1619,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/nightmare.c.o.provides.build: topi
 
 # Object files for target main
 main_OBJECTS = \
+"CMakeFiles/main.dir/src/imageExample.cpp.o" \
 "CMakeFiles/main.dir/darknet/normalization_layer.c.o" \
 "CMakeFiles/main.dir/darknet/activation_layer.c.o" \
 "CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o" \
@@ -1680,7 +1681,6 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/darknet/cuda.c.o" \
 "CMakeFiles/main.dir/darknet/yolo_layer.c.o" \
 "CMakeFiles/main.dir/darknet/network.c.o" \
-"CMakeFiles/main.dir/src/image_detectOnly.cpp.o" \
 "CMakeFiles/main.dir/darknet/data.c.o" \
 "CMakeFiles/main.dir/src/yolo_v2_class.cpp.o" \
 "CMakeFiles/main.dir/darknet/nightmare.c.o"
@@ -1688,6 +1688,7 @@ main_OBJECTS = \
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
+/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/normalization_layer.c.o
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/activation_layer.c.o
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o
@@ -1749,7 +1750,6 @@ main_EXTERNAL_OBJECTS =
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/cuda.c.o
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_layer.c.o
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.o
-/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/data.c.o
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/nightmare.c.o
@@ -1849,6 +1849,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/build: /home/ac-optimus/video/darknet_ros_
 
 .PHONY : topicImgThreadcpp/CMakeFiles/main.dir/build
 
+topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/normalization_layer.c.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/activation_layer.c.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o.requires
@@ -1910,7 +1911,6 @@ topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/mai
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/cuda.c.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_layer.c.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.o.requires
-topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/data.c.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/nightmare.c.o.requires

@@ -166,49 +166,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-topicImgThreadcpp/CMakeFiles/SubInt.dir/rule:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/SubInt.dir/rule
-.PHONY : topicImgThreadcpp/CMakeFiles/SubInt.dir/rule
+topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_genpy.dir/rule:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_genpy.dir/rule
+.PHONY : topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_genpy.dir/rule
 
 # Convenience name for target.
-SubInt: topicImgThreadcpp/CMakeFiles/SubInt.dir/rule
+topicImgThreadcpp_genpy: topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_genpy.dir/rule
 
-.PHONY : SubInt
+.PHONY : topicImgThreadcpp_genpy
 
 # fast build rule for target.
-SubInt/fast:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/SubInt.dir/build.make topicImgThreadcpp/CMakeFiles/SubInt.dir/build
-.PHONY : SubInt/fast
-
-# Convenience name for target.
-topicImgThreadcpp/CMakeFiles/subIntPub.dir/rule:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/subIntPub.dir/rule
-.PHONY : topicImgThreadcpp/CMakeFiles/subIntPub.dir/rule
-
-# Convenience name for target.
-subIntPub: topicImgThreadcpp/CMakeFiles/subIntPub.dir/rule
-
-.PHONY : subIntPub
-
-# fast build rule for target.
-subIntPub/fast:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/subIntPub.dir/build.make topicImgThreadcpp/CMakeFiles/subIntPub.dir/build
-.PHONY : subIntPub/fast
-
-# Convenience name for target.
-topicImgThreadcpp/CMakeFiles/PubInt.dir/rule:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/PubInt.dir/rule
-.PHONY : topicImgThreadcpp/CMakeFiles/PubInt.dir/rule
-
-# Convenience name for target.
-PubInt: topicImgThreadcpp/CMakeFiles/PubInt.dir/rule
-
-.PHONY : PubInt
-
-# fast build rule for target.
-PubInt/fast:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/PubInt.dir/build.make topicImgThreadcpp/CMakeFiles/PubInt.dir/build
-.PHONY : PubInt/fast
+topicImgThreadcpp_genpy/fast:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_genpy.dir/build.make topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_genpy.dir/build
+.PHONY : topicImgThreadcpp_genpy/fast
 
 # Convenience name for target.
 topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_geneus.dir/rule:
@@ -391,21 +361,6 @@ sensor_msgs_generate_messages_eus/fast:
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-topicImgThreadcpp/CMakeFiles/ImgPub.dir/rule:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/ImgPub.dir/rule
-.PHONY : topicImgThreadcpp/CMakeFiles/ImgPub.dir/rule
-
-# Convenience name for target.
-ImgPub: topicImgThreadcpp/CMakeFiles/ImgPub.dir/rule
-
-.PHONY : ImgPub
-
-# fast build rule for target.
-ImgPub/fast:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/ImgPub.dir/build.make topicImgThreadcpp/CMakeFiles/ImgPub.dir/build
-.PHONY : ImgPub/fast
-
-# Convenience name for target.
 topicImgThreadcpp/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : topicImgThreadcpp/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
@@ -434,6 +389,21 @@ topicImgThreadcpp_generate_messages_cpp: topicImgThreadcpp/CMakeFiles/topicImgTh
 topicImgThreadcpp_generate_messages_cpp/fast:
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_cpp.dir/build.make topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_cpp.dir/build
 .PHONY : topicImgThreadcpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBox.dir/rule:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBox.dir/rule
+.PHONY : topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBox.dir/rule
+
+# Convenience name for target.
+_topicImgThreadcpp_generate_messages_check_deps_BoundingBox: topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBox.dir/rule
+
+.PHONY : _topicImgThreadcpp_generate_messages_check_deps_BoundingBox
+
+# fast build rule for target.
+_topicImgThreadcpp_generate_messages_check_deps_BoundingBox/fast:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBox.dir/build.make topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBox.dir/build
+.PHONY : _topicImgThreadcpp_generate_messages_check_deps_BoundingBox/fast
 
 # Convenience name for target.
 topicImgThreadcpp/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
@@ -466,79 +436,19 @@ sensor_msgs_generate_messages_nodejs/fast:
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBox.dir/rule:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBox.dir/rule
-.PHONY : topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBox.dir/rule
+topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBoxArray.dir/rule:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBoxArray.dir/rule
+.PHONY : topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBoxArray.dir/rule
 
 # Convenience name for target.
-_topicImgThreadcpp_generate_messages_check_deps_BoundingBox: topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBox.dir/rule
+_topicImgThreadcpp_generate_messages_check_deps_BoundingBoxArray: topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBoxArray.dir/rule
 
-.PHONY : _topicImgThreadcpp_generate_messages_check_deps_BoundingBox
+.PHONY : _topicImgThreadcpp_generate_messages_check_deps_BoundingBoxArray
 
 # fast build rule for target.
-_topicImgThreadcpp_generate_messages_check_deps_BoundingBox/fast:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBox.dir/build.make topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBox.dir/build
-.PHONY : _topicImgThreadcpp_generate_messages_check_deps_BoundingBox/fast
-
-# Convenience name for target.
-topicImgThreadcpp/CMakeFiles/ImgSub.dir/rule:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/ImgSub.dir/rule
-.PHONY : topicImgThreadcpp/CMakeFiles/ImgSub.dir/rule
-
-# Convenience name for target.
-ImgSub: topicImgThreadcpp/CMakeFiles/ImgSub.dir/rule
-
-.PHONY : ImgSub
-
-# fast build rule for target.
-ImgSub/fast:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/ImgSub.dir/build.make topicImgThreadcpp/CMakeFiles/ImgSub.dir/build
-.PHONY : ImgSub/fast
-
-# Convenience name for target.
-topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_gencpp.dir/rule:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_gencpp.dir/rule
-.PHONY : topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_gencpp.dir/rule
-
-# Convenience name for target.
-topicImgThreadcpp_gencpp: topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_gencpp.dir/rule
-
-.PHONY : topicImgThreadcpp_gencpp
-
-# fast build rule for target.
-topicImgThreadcpp_gencpp/fast:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_gencpp.dir/build.make topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_gencpp.dir/build
-.PHONY : topicImgThreadcpp_gencpp/fast
-
-# Convenience name for target.
-topicImgThreadcpp/CMakeFiles/subImgPub.dir/rule:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/subImgPub.dir/rule
-.PHONY : topicImgThreadcpp/CMakeFiles/subImgPub.dir/rule
-
-# Convenience name for target.
-subImgPub: topicImgThreadcpp/CMakeFiles/subImgPub.dir/rule
-
-.PHONY : subImgPub
-
-# fast build rule for target.
-subImgPub/fast:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/subImgPub.dir/build.make topicImgThreadcpp/CMakeFiles/subImgPub.dir/build
-.PHONY : subImgPub/fast
-
-# Convenience name for target.
-topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/rule:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/rule
-.PHONY : topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-topicImgThreadcpp_generate_messages_nodejs: topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/rule
-
-.PHONY : topicImgThreadcpp_generate_messages_nodejs
-
-# fast build rule for target.
-topicImgThreadcpp_generate_messages_nodejs/fast:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/build.make topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/build
-.PHONY : topicImgThreadcpp_generate_messages_nodejs/fast
+_topicImgThreadcpp_generate_messages_check_deps_BoundingBoxArray/fast:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBoxArray.dir/build.make topicImgThreadcpp/CMakeFiles/_topicImgThreadcpp_generate_messages_check_deps_BoundingBoxArray.dir/build
+.PHONY : _topicImgThreadcpp_generate_messages_check_deps_BoundingBoxArray/fast
 
 # Convenience name for target.
 topicImgThreadcpp/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
@@ -571,6 +481,36 @@ topicImgThreadcpp_gennodejs/fast:
 .PHONY : topicImgThreadcpp_gennodejs/fast
 
 # Convenience name for target.
+topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_gencpp.dir/rule:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_gencpp.dir/rule
+.PHONY : topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_gencpp.dir/rule
+
+# Convenience name for target.
+topicImgThreadcpp_gencpp: topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_gencpp.dir/rule
+
+.PHONY : topicImgThreadcpp_gencpp
+
+# fast build rule for target.
+topicImgThreadcpp_gencpp/fast:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_gencpp.dir/build.make topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_gencpp.dir/build
+.PHONY : topicImgThreadcpp_gencpp/fast
+
+# Convenience name for target.
+topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/rule:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/rule
+.PHONY : topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+topicImgThreadcpp_generate_messages_nodejs: topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/rule
+
+.PHONY : topicImgThreadcpp_generate_messages_nodejs
+
+# fast build rule for target.
+topicImgThreadcpp_generate_messages_nodejs/fast:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/build.make topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_nodejs.dir/build
+.PHONY : topicImgThreadcpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
 topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_py.dir/rule:
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_py.dir/rule
 .PHONY : topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_py.dir/rule
@@ -584,21 +524,6 @@ topicImgThreadcpp_generate_messages_py: topicImgThreadcpp/CMakeFiles/topicImgThr
 topicImgThreadcpp_generate_messages_py/fast:
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_py.dir/build.make topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_py.dir/build
 .PHONY : topicImgThreadcpp_generate_messages_py/fast
-
-# Convenience name for target.
-topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_genpy.dir/rule:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_genpy.dir/rule
-.PHONY : topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_genpy.dir/rule
-
-# Convenience name for target.
-topicImgThreadcpp_genpy: topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_genpy.dir/rule
-
-.PHONY : topicImgThreadcpp_genpy
-
-# fast build rule for target.
-topicImgThreadcpp_genpy/fast:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_genpy.dir/build.make topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_genpy.dir/build
-.PHONY : topicImgThreadcpp_genpy/fast
 
 darknet/activation_layer.o: darknet/activation_layer.c.o
 
@@ -2301,194 +2226,32 @@ darknet/yolo_layer.c.s:
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_layer.c.s
 .PHONY : darknet/yolo_layer.c.s
 
-src/ImgPub.o: src/ImgPub.cpp.o
+src/imageExample.o: src/imageExample.cpp.o
 
-.PHONY : src/ImgPub.o
-
-# target to build an object file
-src/ImgPub.cpp.o:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/ImgPub.dir/build.make topicImgThreadcpp/CMakeFiles/ImgPub.dir/src/ImgPub.cpp.o
-.PHONY : src/ImgPub.cpp.o
-
-src/ImgPub.i: src/ImgPub.cpp.i
-
-.PHONY : src/ImgPub.i
-
-# target to preprocess a source file
-src/ImgPub.cpp.i:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/ImgPub.dir/build.make topicImgThreadcpp/CMakeFiles/ImgPub.dir/src/ImgPub.cpp.i
-.PHONY : src/ImgPub.cpp.i
-
-src/ImgPub.s: src/ImgPub.cpp.s
-
-.PHONY : src/ImgPub.s
-
-# target to generate assembly for a file
-src/ImgPub.cpp.s:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/ImgPub.dir/build.make topicImgThreadcpp/CMakeFiles/ImgPub.dir/src/ImgPub.cpp.s
-.PHONY : src/ImgPub.cpp.s
-
-src/ImgSub.o: src/ImgSub.cpp.o
-
-.PHONY : src/ImgSub.o
+.PHONY : src/imageExample.o
 
 # target to build an object file
-src/ImgSub.cpp.o:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/ImgSub.dir/build.make topicImgThreadcpp/CMakeFiles/ImgSub.dir/src/ImgSub.cpp.o
-.PHONY : src/ImgSub.cpp.o
+src/imageExample.cpp.o:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o
+.PHONY : src/imageExample.cpp.o
 
-src/ImgSub.i: src/ImgSub.cpp.i
+src/imageExample.i: src/imageExample.cpp.i
 
-.PHONY : src/ImgSub.i
-
-# target to preprocess a source file
-src/ImgSub.cpp.i:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/ImgSub.dir/build.make topicImgThreadcpp/CMakeFiles/ImgSub.dir/src/ImgSub.cpp.i
-.PHONY : src/ImgSub.cpp.i
-
-src/ImgSub.s: src/ImgSub.cpp.s
-
-.PHONY : src/ImgSub.s
-
-# target to generate assembly for a file
-src/ImgSub.cpp.s:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/ImgSub.dir/build.make topicImgThreadcpp/CMakeFiles/ImgSub.dir/src/ImgSub.cpp.s
-.PHONY : src/ImgSub.cpp.s
-
-src/PubInt.o: src/PubInt.cpp.o
-
-.PHONY : src/PubInt.o
-
-# target to build an object file
-src/PubInt.cpp.o:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/PubInt.dir/build.make topicImgThreadcpp/CMakeFiles/PubInt.dir/src/PubInt.cpp.o
-.PHONY : src/PubInt.cpp.o
-
-src/PubInt.i: src/PubInt.cpp.i
-
-.PHONY : src/PubInt.i
+.PHONY : src/imageExample.i
 
 # target to preprocess a source file
-src/PubInt.cpp.i:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/PubInt.dir/build.make topicImgThreadcpp/CMakeFiles/PubInt.dir/src/PubInt.cpp.i
-.PHONY : src/PubInt.cpp.i
+src/imageExample.cpp.i:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.i
+.PHONY : src/imageExample.cpp.i
 
-src/PubInt.s: src/PubInt.cpp.s
+src/imageExample.s: src/imageExample.cpp.s
 
-.PHONY : src/PubInt.s
-
-# target to generate assembly for a file
-src/PubInt.cpp.s:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/PubInt.dir/build.make topicImgThreadcpp/CMakeFiles/PubInt.dir/src/PubInt.cpp.s
-.PHONY : src/PubInt.cpp.s
-
-src/SubImgPub.o: src/SubImgPub.cpp.o
-
-.PHONY : src/SubImgPub.o
-
-# target to build an object file
-src/SubImgPub.cpp.o:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/subImgPub.dir/build.make topicImgThreadcpp/CMakeFiles/subImgPub.dir/src/SubImgPub.cpp.o
-.PHONY : src/SubImgPub.cpp.o
-
-src/SubImgPub.i: src/SubImgPub.cpp.i
-
-.PHONY : src/SubImgPub.i
-
-# target to preprocess a source file
-src/SubImgPub.cpp.i:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/subImgPub.dir/build.make topicImgThreadcpp/CMakeFiles/subImgPub.dir/src/SubImgPub.cpp.i
-.PHONY : src/SubImgPub.cpp.i
-
-src/SubImgPub.s: src/SubImgPub.cpp.s
-
-.PHONY : src/SubImgPub.s
+.PHONY : src/imageExample.s
 
 # target to generate assembly for a file
-src/SubImgPub.cpp.s:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/subImgPub.dir/build.make topicImgThreadcpp/CMakeFiles/subImgPub.dir/src/SubImgPub.cpp.s
-.PHONY : src/SubImgPub.cpp.s
-
-src/SubInt.o: src/SubInt.cpp.o
-
-.PHONY : src/SubInt.o
-
-# target to build an object file
-src/SubInt.cpp.o:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/SubInt.dir/build.make topicImgThreadcpp/CMakeFiles/SubInt.dir/src/SubInt.cpp.o
-.PHONY : src/SubInt.cpp.o
-
-src/SubInt.i: src/SubInt.cpp.i
-
-.PHONY : src/SubInt.i
-
-# target to preprocess a source file
-src/SubInt.cpp.i:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/SubInt.dir/build.make topicImgThreadcpp/CMakeFiles/SubInt.dir/src/SubInt.cpp.i
-.PHONY : src/SubInt.cpp.i
-
-src/SubInt.s: src/SubInt.cpp.s
-
-.PHONY : src/SubInt.s
-
-# target to generate assembly for a file
-src/SubInt.cpp.s:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/SubInt.dir/build.make topicImgThreadcpp/CMakeFiles/SubInt.dir/src/SubInt.cpp.s
-.PHONY : src/SubInt.cpp.s
-
-src/SubIntPub.o: src/SubIntPub.cpp.o
-
-.PHONY : src/SubIntPub.o
-
-# target to build an object file
-src/SubIntPub.cpp.o:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/subIntPub.dir/build.make topicImgThreadcpp/CMakeFiles/subIntPub.dir/src/SubIntPub.cpp.o
-.PHONY : src/SubIntPub.cpp.o
-
-src/SubIntPub.i: src/SubIntPub.cpp.i
-
-.PHONY : src/SubIntPub.i
-
-# target to preprocess a source file
-src/SubIntPub.cpp.i:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/subIntPub.dir/build.make topicImgThreadcpp/CMakeFiles/subIntPub.dir/src/SubIntPub.cpp.i
-.PHONY : src/SubIntPub.cpp.i
-
-src/SubIntPub.s: src/SubIntPub.cpp.s
-
-.PHONY : src/SubIntPub.s
-
-# target to generate assembly for a file
-src/SubIntPub.cpp.s:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/subIntPub.dir/build.make topicImgThreadcpp/CMakeFiles/subIntPub.dir/src/SubIntPub.cpp.s
-.PHONY : src/SubIntPub.cpp.s
-
-src/image_detectOnly.o: src/image_detectOnly.cpp.o
-
-.PHONY : src/image_detectOnly.o
-
-# target to build an object file
-src/image_detectOnly.cpp.o:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.o
-.PHONY : src/image_detectOnly.cpp.o
-
-src/image_detectOnly.i: src/image_detectOnly.cpp.i
-
-.PHONY : src/image_detectOnly.i
-
-# target to preprocess a source file
-src/image_detectOnly.cpp.i:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.i
-.PHONY : src/image_detectOnly.cpp.i
-
-src/image_detectOnly.s: src/image_detectOnly.cpp.s
-
-.PHONY : src/image_detectOnly.s
-
-# target to generate assembly for a file
-src/image_detectOnly.cpp.s:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/image_detectOnly.cpp.s
-.PHONY : src/image_detectOnly.cpp.s
+src/imageExample.cpp.s:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.s
+.PHONY : src/imageExample.cpp.s
 
 src/yolo_v2_class.o: src/yolo_v2_class.cpp.o
 
@@ -2528,9 +2291,7 @@ help:
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... install/strip"
-	@echo "... SubInt"
-	@echo "... subIntPub"
-	@echo "... PubInt"
+	@echo "... topicImgThreadcpp_genpy"
 	@echo "... topicImgThreadcpp_geneus"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... topicImgThreadcpp_generate_messages_eus"
@@ -2544,21 +2305,18 @@ help:
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... list_install_components"
 	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... ImgPub"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... topicImgThreadcpp_generate_messages_cpp"
+	@echo "... _topicImgThreadcpp_generate_messages_check_deps_BoundingBox"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... _topicImgThreadcpp_generate_messages_check_deps_BoundingBox"
-	@echo "... ImgSub"
-	@echo "... topicImgThreadcpp_gencpp"
-	@echo "... subImgPub"
-	@echo "... topicImgThreadcpp_generate_messages_nodejs"
+	@echo "... _topicImgThreadcpp_generate_messages_check_deps_BoundingBoxArray"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... topicImgThreadcpp_gennodejs"
+	@echo "... topicImgThreadcpp_gencpp"
+	@echo "... topicImgThreadcpp_generate_messages_nodejs"
 	@echo "... edit_cache"
 	@echo "... topicImgThreadcpp_generate_messages_py"
-	@echo "... topicImgThreadcpp_genpy"
 	@echo "... darknet/activation_layer.o"
 	@echo "... darknet/activation_layer.i"
 	@echo "... darknet/activation_layer.s"
@@ -2748,27 +2506,9 @@ help:
 	@echo "... darknet/yolo_layer.o"
 	@echo "... darknet/yolo_layer.i"
 	@echo "... darknet/yolo_layer.s"
-	@echo "... src/ImgPub.o"
-	@echo "... src/ImgPub.i"
-	@echo "... src/ImgPub.s"
-	@echo "... src/ImgSub.o"
-	@echo "... src/ImgSub.i"
-	@echo "... src/ImgSub.s"
-	@echo "... src/PubInt.o"
-	@echo "... src/PubInt.i"
-	@echo "... src/PubInt.s"
-	@echo "... src/SubImgPub.o"
-	@echo "... src/SubImgPub.i"
-	@echo "... src/SubImgPub.s"
-	@echo "... src/SubInt.o"
-	@echo "... src/SubInt.i"
-	@echo "... src/SubInt.s"
-	@echo "... src/SubIntPub.o"
-	@echo "... src/SubIntPub.i"
-	@echo "... src/SubIntPub.s"
-	@echo "... src/image_detectOnly.o"
-	@echo "... src/image_detectOnly.i"
-	@echo "... src/image_detectOnly.s"
+	@echo "... src/imageExample.o"
+	@echo "... src/imageExample.i"
+	@echo "... src/imageExample.s"
 	@echo "... src/yolo_v2_class.o"
 	@echo "... src/yolo_v2_class.i"
 	@echo "... src/yolo_v2_class.s"

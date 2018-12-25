@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/topicImgThreadcpp_generate_messages_py"
   "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/topicImgThreadcpp/msg/_BoundingBox.py"
+  "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/topicImgThreadcpp/msg/_BoundingBoxArray.py"
   "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/python2.7/dist-packages/topicImgThreadcpp/msg/__init__.py"
 )
 
