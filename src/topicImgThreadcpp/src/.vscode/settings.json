@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "*.cpp": "cpp",
-        "mutex": "cpp"
+        "mutex": "cpp",
+        "deque": "cpp",
+        "vector": "cpp"
     }
 }

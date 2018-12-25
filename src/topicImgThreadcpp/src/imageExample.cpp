@@ -5,7 +5,7 @@
 #include <cv_bridge/cv_bridge.h>
 #include <thread>
 #include <mutex>
-#include "topicImgThreadcpp/BoundingBox.h"
+#include <topicImgThreadcpp/BoundingBox.h>
 
 #include <iostream>
 #include <iomanip> 
