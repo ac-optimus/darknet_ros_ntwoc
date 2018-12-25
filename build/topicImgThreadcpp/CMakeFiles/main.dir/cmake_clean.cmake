@@ -62,7 +62,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/darknet/yolo_layer.c.o"
   "CMakeFiles/main.dir/darknet/network.c.o"
   "CMakeFiles/main.dir/darknet/data.c.o"
-  "CMakeFiles/main.dir/src/yolo_v2_class.cpp.o"
+  "CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o"
   "CMakeFiles/main.dir/darknet/nightmare.c.o"
   "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main.pdb"
   "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main"

@@ -65,8 +65,6 @@ void draw_boxes(cv::Mat mat_img, std::vector<bbox_t> result_vec, std::vector<std
 }
 
 
-
-
 void print_result(std::vector<bbox_t>result_vec)
 {
     std::vector<bbox_t> l =result_vec;

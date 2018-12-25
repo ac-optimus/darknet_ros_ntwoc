@@ -256,6 +256,21 @@ sensor_msgs_generate_messages_cpp/fast:
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+topicImgThreadcpp/CMakeFiles/sub.dir/rule:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/sub.dir/rule
+.PHONY : topicImgThreadcpp/CMakeFiles/sub.dir/rule
+
+# Convenience name for target.
+sub: topicImgThreadcpp/CMakeFiles/sub.dir/rule
+
+.PHONY : sub
+
+# fast build rule for target.
+sub/fast:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/sub.dir/build.make topicImgThreadcpp/CMakeFiles/sub.dir/build
+.PHONY : sub/fast
+
+# Convenience name for target.
 topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_lisp.dir/rule:
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_lisp.dir/rule
 .PHONY : topicImgThreadcpp/CMakeFiles/topicImgThreadcpp_generate_messages_lisp.dir/rule
@@ -359,6 +374,21 @@ sensor_msgs_generate_messages_eus: topicImgThreadcpp/CMakeFiles/sensor_msgs_gene
 sensor_msgs_generate_messages_eus/fast:
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make topicImgThreadcpp/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+topicImgThreadcpp/CMakeFiles/ImgPub.dir/rule:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f CMakeFiles/Makefile2 topicImgThreadcpp/CMakeFiles/ImgPub.dir/rule
+.PHONY : topicImgThreadcpp/CMakeFiles/ImgPub.dir/rule
+
+# Convenience name for target.
+ImgPub: topicImgThreadcpp/CMakeFiles/ImgPub.dir/rule
+
+.PHONY : ImgPub
+
+# fast build rule for target.
+ImgPub/fast:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/ImgPub.dir/build.make topicImgThreadcpp/CMakeFiles/ImgPub.dir/build
+.PHONY : ImgPub/fast
 
 # Convenience name for target.
 topicImgThreadcpp/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
@@ -2226,6 +2256,87 @@ darknet/yolo_layer.c.s:
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_layer.c.s
 .PHONY : darknet/yolo_layer.c.s
 
+darknet/yolo_v2_class.o: darknet/yolo_v2_class.cpp.o
+
+.PHONY : darknet/yolo_v2_class.o
+
+# target to build an object file
+darknet/yolo_v2_class.cpp.o:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o
+.PHONY : darknet/yolo_v2_class.cpp.o
+
+darknet/yolo_v2_class.i: darknet/yolo_v2_class.cpp.i
+
+.PHONY : darknet/yolo_v2_class.i
+
+# target to preprocess a source file
+darknet/yolo_v2_class.cpp.i:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.i
+.PHONY : darknet/yolo_v2_class.cpp.i
+
+darknet/yolo_v2_class.s: darknet/yolo_v2_class.cpp.s
+
+.PHONY : darknet/yolo_v2_class.s
+
+# target to generate assembly for a file
+darknet/yolo_v2_class.cpp.s:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.s
+.PHONY : darknet/yolo_v2_class.cpp.s
+
+src/ImgPub.o: src/ImgPub.cpp.o
+
+.PHONY : src/ImgPub.o
+
+# target to build an object file
+src/ImgPub.cpp.o:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/ImgPub.dir/build.make topicImgThreadcpp/CMakeFiles/ImgPub.dir/src/ImgPub.cpp.o
+.PHONY : src/ImgPub.cpp.o
+
+src/ImgPub.i: src/ImgPub.cpp.i
+
+.PHONY : src/ImgPub.i
+
+# target to preprocess a source file
+src/ImgPub.cpp.i:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/ImgPub.dir/build.make topicImgThreadcpp/CMakeFiles/ImgPub.dir/src/ImgPub.cpp.i
+.PHONY : src/ImgPub.cpp.i
+
+src/ImgPub.s: src/ImgPub.cpp.s
+
+.PHONY : src/ImgPub.s
+
+# target to generate assembly for a file
+src/ImgPub.cpp.s:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/ImgPub.dir/build.make topicImgThreadcpp/CMakeFiles/ImgPub.dir/src/ImgPub.cpp.s
+.PHONY : src/ImgPub.cpp.s
+
+src/customMsgSub.o: src/customMsgSub.cpp.o
+
+.PHONY : src/customMsgSub.o
+
+# target to build an object file
+src/customMsgSub.cpp.o:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/sub.dir/build.make topicImgThreadcpp/CMakeFiles/sub.dir/src/customMsgSub.cpp.o
+.PHONY : src/customMsgSub.cpp.o
+
+src/customMsgSub.i: src/customMsgSub.cpp.i
+
+.PHONY : src/customMsgSub.i
+
+# target to preprocess a source file
+src/customMsgSub.cpp.i:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/sub.dir/build.make topicImgThreadcpp/CMakeFiles/sub.dir/src/customMsgSub.cpp.i
+.PHONY : src/customMsgSub.cpp.i
+
+src/customMsgSub.s: src/customMsgSub.cpp.s
+
+.PHONY : src/customMsgSub.s
+
+# target to generate assembly for a file
+src/customMsgSub.cpp.s:
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/sub.dir/build.make topicImgThreadcpp/CMakeFiles/sub.dir/src/customMsgSub.cpp.s
+.PHONY : src/customMsgSub.cpp.s
+
 src/imageExample.o: src/imageExample.cpp.o
 
 .PHONY : src/imageExample.o
@@ -2253,33 +2364,6 @@ src/imageExample.cpp.s:
 	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.s
 .PHONY : src/imageExample.cpp.s
 
-src/yolo_v2_class.o: src/yolo_v2_class.cpp.o
-
-.PHONY : src/yolo_v2_class.o
-
-# target to build an object file
-src/yolo_v2_class.cpp.o:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o
-.PHONY : src/yolo_v2_class.cpp.o
-
-src/yolo_v2_class.i: src/yolo_v2_class.cpp.i
-
-.PHONY : src/yolo_v2_class.i
-
-# target to preprocess a source file
-src/yolo_v2_class.cpp.i:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.i
-.PHONY : src/yolo_v2_class.cpp.i
-
-src/yolo_v2_class.s: src/yolo_v2_class.cpp.s
-
-.PHONY : src/yolo_v2_class.s
-
-# target to generate assembly for a file
-src/yolo_v2_class.cpp.s:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.s
-.PHONY : src/yolo_v2_class.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2297,6 +2381,7 @@ help:
 	@echo "... topicImgThreadcpp_generate_messages_eus"
 	@echo "... main"
 	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sub"
 	@echo "... topicImgThreadcpp_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... topicImgThreadcpp_genlisp"
@@ -2305,6 +2390,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... list_install_components"
 	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... ImgPub"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... topicImgThreadcpp_generate_messages_cpp"
 	@echo "... _topicImgThreadcpp_generate_messages_check_deps_BoundingBox"
@@ -2506,12 +2592,18 @@ help:
 	@echo "... darknet/yolo_layer.o"
 	@echo "... darknet/yolo_layer.i"
 	@echo "... darknet/yolo_layer.s"
+	@echo "... darknet/yolo_v2_class.o"
+	@echo "... darknet/yolo_v2_class.i"
+	@echo "... darknet/yolo_v2_class.s"
+	@echo "... src/ImgPub.o"
+	@echo "... src/ImgPub.i"
+	@echo "... src/ImgPub.s"
+	@echo "... src/customMsgSub.o"
+	@echo "... src/customMsgSub.i"
+	@echo "... src/customMsgSub.s"
 	@echo "... src/imageExample.o"
 	@echo "... src/imageExample.i"
 	@echo "... src/imageExample.s"
-	@echo "... src/yolo_v2_class.o"
-	@echo "... src/yolo_v2_class.i"
-	@echo "... src/yolo_v2_class.s"
 .PHONY : help
 
 

@@ -222,7 +222,7 @@ message("${${PROJECT_NAME}_EXPORTED_TARGETS}: " ${catkin__EXPORTED_TARGETS})   #
 
 
 
-add_executable(main  src/imageExample.cpp 
+add_executable(main  src/imageExample.cpp darknet/yolo_v2_class.hpp
 darknet/activation_kernels.cu     darknet/deconvolutional_kernels.cu  darknet/normalization_layer.c
 darknet/activation_layer.c        darknet/deconvolutional_layer.c     darknet/normalization_layer.h
 darknet/activation_layer.h        darknet/deconvolutional_layer.h     darknet/option_list.c
@@ -264,26 +264,26 @@ darknet/crop_layer_kernels.cu     darknet/maxpool_layer.h
 darknet/cuda.c                    darknet/maxpool_layer_kernels.cu    darknet/yolo_layer.c
 darknet/cuda.h                    darknet/network.c                   darknet/yolo_layer.h
                                   darknet/network.h                   
-darknet/data.c                    darknet/network_kernels.cu          src/yolo_v2_class.cpp
-darknet/data.h                    darknet/nightmare.c                 src/yolo_v2_class.hpp
+darknet/data.c                    darknet/network_kernels.cu          darknet/yolo_v2_class.cpp
+darknet/data.h                    darknet/nightmare.c                 
 )
 
 target_link_libraries(main ${catkin_LIBRARIES} ${OpenCV_LIBRARIES}  ${Boost_LIBRARIES} )
 add_dependencies(main ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-
-
-
-if (FALSE)
-
-
-add_executable(try src/customMsg.cpp )
-target_link_libraries(try ${catkin_LIBRARIES}   ${OpenCV_LIBRARIES} ${Boost_LIBRARIES})
-add_dependencies(try ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_executable(ImgPub src/ImgPub.cpp)
+target_link_libraries(ImgPub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 
 add_executable(sub src/customMsgSub.cpp )
 target_link_libraries(sub ${catkin_LIBRARIES}   ${OpenCV_LIBRARIES} ${Boost_LIBRARIES})
 add_dependencies(sub ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+
+if (FALSE)
+add_executable(try src/customMsg.cpp )
+target_link_libraries(try ${catkin_LIBRARIES}   ${OpenCV_LIBRARIES} ${Boost_LIBRARIES})
+add_dependencies(try ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 
 add_executable(PubInt src/PubInt.cpp)
 target_link_libraries(PubInt ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
@@ -310,6 +310,4 @@ target_link_libraries(subImgPub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 
 #add_executable(example src/imageExample.cpp)
 #target_link_libraries(example ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
-
-
 endif()

@@ -1569,28 +1569,28 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/data.c.o.provides: topicImgThreadc
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/data.c.o.provides.build: topicImgThreadcpp/CMakeFiles/main.dir/darknet/data.c.o
 
 
-topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
-topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/yolo_v2_class.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o"
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/yolo_v2_class.cpp.o -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/yolo_v2_class.cpp
+topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
+topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o: /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/yolo_v2_class.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o"
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o -c /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/yolo_v2_class.cpp
 
-topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/yolo_v2_class.cpp.i"
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/yolo_v2_class.cpp > CMakeFiles/main.dir/src/yolo_v2_class.cpp.i
+topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.i"
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/yolo_v2_class.cpp > CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.i
 
-topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/yolo_v2_class.cpp.s"
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/yolo_v2_class.cpp -o CMakeFiles/main.dir/src/yolo_v2_class.cpp.s
+topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.s"
+	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/darknet/yolo_v2_class.cpp -o CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.s
 
-topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o.requires:
+topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o.requires:
 
-.PHONY : topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o.requires
+.PHONY : topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o.requires
 
-topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o.provides: topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o.requires
-	$(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o.provides.build
-.PHONY : topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o.provides
+topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o.provides: topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o.requires
+	$(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o.provides.build
+.PHONY : topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o.provides
 
-topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o.provides.build: topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o
+topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o.provides.build: topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o
 
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/nightmare.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
@@ -1682,7 +1682,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/darknet/yolo_layer.c.o" \
 "CMakeFiles/main.dir/darknet/network.c.o" \
 "CMakeFiles/main.dir/darknet/data.c.o" \
-"CMakeFiles/main.dir/src/yolo_v2_class.cpp.o" \
+"CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o" \
 "CMakeFiles/main.dir/darknet/nightmare.c.o"
 
 # External object files for target main
@@ -1751,7 +1751,7 @@ main_EXTERNAL_OBJECTS =
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_layer.c.o
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.o
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/data.c.o
-/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o
+/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/nightmare.c.o
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/build.make
 /home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: /opt/ros/kinetic/lib/libimage_transport.so
@@ -1912,7 +1912,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/mai
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_layer.c.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/network.c.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/data.c.o.requires
-topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/src/yolo_v2_class.cpp.o.requires
+topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/nightmare.c.o.requires
 
 .PHONY : topicImgThreadcpp/CMakeFiles/main.dir/requires
