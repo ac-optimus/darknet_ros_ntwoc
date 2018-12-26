@@ -13,13 +13,11 @@
 #include <vector>
 #include <queue>
 #include <fstream>
-
 #include <atomic>
-              // std::mutex, std::unique_lock
 #include <condition_variable> // std::condition_variable
 #include <unistd.h>
 
-#define MY_PATH "/home/ac-optimus/Pictures/darknet" //working directory
+#define MY_PATH "/home/ac-optimus/Pictures/darknet" //location to darknet directory
 
 //opencv
 #include <opencv2/opencv.hpp>            // C++
@@ -41,7 +39,7 @@
 std::mutex lockImg;
 std::mutex lockImg2;
 std::mutex lockBox;
-cv::Mat image1 = cv::imread("/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/data/dog.jpg",CV_LOAD_IMAGE_COLOR); //shared resource
+cv::Mat image1; // = cv::imread("/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/data/dog.jpg",CV_LOAD_IMAGE_COLOR); //shared resource
 cv::Mat image2; //ouput image
 topicImgThreadcpp::BoundingBoxArray msgBoxArr;
 
@@ -235,7 +233,7 @@ int main(int argc, char** argv)
 
     ros::init(argc, argv, "examples");
     ros::NodeHandle nl;
-   // std::thread subImg(subThread,nl);   
+    std::thread subImg(subThread,nl);   
     std::thread pubImg(pubThread, nl);  //additional thread
     std::thread pubBox(pubBoundingBox,nl);
     std::thread yolo(darknetyolo,nl);
@@ -251,8 +249,8 @@ int main(int argc, char** argv)
     {
         pubImg.join();
     }
-    /*if (subImg.joinable())
+    if (subImg.joinable())
     {
         subImg.join();
-    }*/
+    }
 }

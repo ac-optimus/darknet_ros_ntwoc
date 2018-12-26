@@ -57,28 +57,28 @@ include topicImgThreadcpp/CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include topicImgThreadcpp/CMakeFiles/main.dir/flags.make
 
-topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
-topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o: /home/ac-optimus/video/l/darknet_ros_ntwoc/src/topicImgThreadcpp/src/imageExample.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/l/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o"
-	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/imageExample.cpp.o -c /home/ac-optimus/video/l/darknet_ros_ntwoc/src/topicImgThreadcpp/src/imageExample.cpp
+topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
+topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o: /home/ac-optimus/video/l/darknet_ros_ntwoc/src/topicImgThreadcpp/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ac-optimus/video/l/darknet_ros_ntwoc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o"
+	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/main.cpp.o -c /home/ac-optimus/video/l/darknet_ros_ntwoc/src/topicImgThreadcpp/src/main.cpp
 
-topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/imageExample.cpp.i"
-	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ac-optimus/video/l/darknet_ros_ntwoc/src/topicImgThreadcpp/src/imageExample.cpp > CMakeFiles/main.dir/src/imageExample.cpp.i
+topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
+	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ac-optimus/video/l/darknet_ros_ntwoc/src/topicImgThreadcpp/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
 
-topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/imageExample.cpp.s"
-	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ac-optimus/video/l/darknet_ros_ntwoc/src/topicImgThreadcpp/src/imageExample.cpp -o CMakeFiles/main.dir/src/imageExample.cpp.s
+topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
+	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build/topicImgThreadcpp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ac-optimus/video/l/darknet_ros_ntwoc/src/topicImgThreadcpp/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
-topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.requires:
+topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o.requires:
 
-.PHONY : topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.requires
+.PHONY : topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o.requires
 
-topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.provides: topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.requires
-	$(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.provides.build
-.PHONY : topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.provides
+topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o.provides: topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o.requires
+	$(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o.provides.build
+.PHONY : topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o.provides
 
-topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.provides.build: topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o
+topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o.provides.build: topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o
 
 
 topicImgThreadcpp/CMakeFiles/main.dir/darknet/normalization_layer.c.o: topicImgThreadcpp/CMakeFiles/main.dir/flags.make
@@ -1619,7 +1619,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/darknet/nightmare.c.o.provides.build: topi
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/src/imageExample.cpp.o" \
+"CMakeFiles/main.dir/src/main.cpp.o" \
 "CMakeFiles/main.dir/darknet/normalization_layer.c.o" \
 "CMakeFiles/main.dir/darknet/activation_layer.c.o" \
 "CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o" \
@@ -1688,7 +1688,7 @@ main_OBJECTS = \
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-/home/ac-optimus/video/l/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o
+/home/ac-optimus/video/l/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o
 /home/ac-optimus/video/l/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/normalization_layer.c.o
 /home/ac-optimus/video/l/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/activation_layer.c.o
 /home/ac-optimus/video/l/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main: topicImgThreadcpp/CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o
@@ -1849,7 +1849,7 @@ topicImgThreadcpp/CMakeFiles/main.dir/build: /home/ac-optimus/video/l/darknet_ro
 
 .PHONY : topicImgThreadcpp/CMakeFiles/main.dir/build
 
-topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o.requires
+topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/normalization_layer.c.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/activation_layer.c.o.requires
 topicImgThreadcpp/CMakeFiles/main.dir/requires: topicImgThreadcpp/CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o.requires

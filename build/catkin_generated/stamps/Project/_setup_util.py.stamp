@@ -262,7 +262,7 @@ if __name__ == '__main__':
             sys.exit(1)
 
         # environment at generation time
-        CMAKE_PREFIX_PATH = '/home/ac-optimus/video/darknet_ros_ntwoc/devel;/opt/ros/kinetic'.split(';')
+        CMAKE_PREFIX_PATH = '/home/ac-optimus/video/l/darknet_ros_ntwoc/devel;/opt/ros/kinetic'.split(';')
         # prepend current workspace if not already part of CPP
         base_path = os.path.dirname(__file__)
         if base_path not in CMAKE_PREFIX_PATH:

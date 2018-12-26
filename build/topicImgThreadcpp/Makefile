@@ -2337,32 +2337,32 @@ src/customMsgSub.cpp.s:
 	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/sub.dir/build.make topicImgThreadcpp/CMakeFiles/sub.dir/src/customMsgSub.cpp.s
 .PHONY : src/customMsgSub.cpp.s
 
-src/imageExample.o: src/imageExample.cpp.o
+src/main.o: src/main.cpp.o
 
-.PHONY : src/imageExample.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/imageExample.cpp.o:
-	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.o
-.PHONY : src/imageExample.cpp.o
+src/main.cpp.o:
+	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/imageExample.i: src/imageExample.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : src/imageExample.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/imageExample.cpp.i:
-	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.i
-.PHONY : src/imageExample.cpp.i
+src/main.cpp.i:
+	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/imageExample.s: src/imageExample.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : src/imageExample.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/imageExample.cpp.s:
-	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/imageExample.cpp.s
-.PHONY : src/imageExample.cpp.s
+src/main.cpp.s:
+	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build && $(MAKE) -f topicImgThreadcpp/CMakeFiles/main.dir/build.make topicImgThreadcpp/CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -2601,9 +2601,9 @@ help:
 	@echo "... src/customMsgSub.o"
 	@echo "... src/customMsgSub.i"
 	@echo "... src/customMsgSub.s"
-	@echo "... src/imageExample.o"
-	@echo "... src/imageExample.i"
-	@echo "... src/imageExample.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

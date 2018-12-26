@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/src/imageExample.cpp.o"
+  "CMakeFiles/main.dir/src/main.cpp.o"
   "CMakeFiles/main.dir/darknet/normalization_layer.c.o"
   "CMakeFiles/main.dir/darknet/activation_layer.c.o"
   "CMakeFiles/main.dir/darknet/deconvolutional_layer.c.o"
