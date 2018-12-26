@@ -64,8 +64,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/darknet/data.c.o"
   "CMakeFiles/main.dir/darknet/yolo_v2_class.cpp.o"
   "CMakeFiles/main.dir/darknet/nightmare.c.o"
-  "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main.pdb"
-  "/home/ac-optimus/video/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main"
+  "/home/ac-optimus/video/l/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main.pdb"
+  "/home/ac-optimus/video/l/darknet_ros_ntwoc/devel/lib/topicImgThreadcpp/main"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/topicImgThreadcpp_generate_messages_nodejs"
-  "/home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg/BoundingBox.js"
-  "/home/ac-optimus/video/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg/BoundingBoxArray.js"
+  "/home/ac-optimus/video/l/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg/BoundingBoxArray.js"
+  "/home/ac-optimus/video/l/darknet_ros_ntwoc/devel/share/gennodejs/ros/topicImgThreadcpp/msg/BoundingBox.js"
 )
 
 # Per-language clean rules from dependency scanning.

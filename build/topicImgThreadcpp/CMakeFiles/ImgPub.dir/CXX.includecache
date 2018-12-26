@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/src/ImgPub.cpp
+/home/ac-optimus/video/l/darknet_ros_ntwoc/src/topicImgThreadcpp/src/ImgPub.cpp
 ros/ros.h
 -
 image_transport/image_transport.h

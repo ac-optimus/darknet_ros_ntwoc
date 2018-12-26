@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ac-optimus/video/darknet_ros_ntwoc/src
+CMAKE_SOURCE_DIR = /home/ac-optimus/video/l/darknet_ros_ntwoc/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ac-optimus/video/darknet_ros_ntwoc/build
+CMAKE_BINARY_DIR = /home/ac-optimus/video/l/darknet_ros_ntwoc/build
 
 # Utility rule file for pythonSubPub_gencpp.
 
@@ -63,10 +63,10 @@ pythonSubPub/CMakeFiles/pythonSubPub_gencpp.dir/build: pythonSubPub_gencpp
 .PHONY : pythonSubPub/CMakeFiles/pythonSubPub_gencpp.dir/build
 
 pythonSubPub/CMakeFiles/pythonSubPub_gencpp.dir/clean:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build/pythonSubPub && $(CMAKE_COMMAND) -P CMakeFiles/pythonSubPub_gencpp.dir/cmake_clean.cmake
+	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build/pythonSubPub && $(CMAKE_COMMAND) -P CMakeFiles/pythonSubPub_gencpp.dir/cmake_clean.cmake
 .PHONY : pythonSubPub/CMakeFiles/pythonSubPub_gencpp.dir/clean
 
 pythonSubPub/CMakeFiles/pythonSubPub_gencpp.dir/depend:
-	cd /home/ac-optimus/video/darknet_ros_ntwoc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ac-optimus/video/darknet_ros_ntwoc/src /home/ac-optimus/video/darknet_ros_ntwoc/src/pythonSubPub /home/ac-optimus/video/darknet_ros_ntwoc/build /home/ac-optimus/video/darknet_ros_ntwoc/build/pythonSubPub /home/ac-optimus/video/darknet_ros_ntwoc/build/pythonSubPub/CMakeFiles/pythonSubPub_gencpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ac-optimus/video/l/darknet_ros_ntwoc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ac-optimus/video/l/darknet_ros_ntwoc/src /home/ac-optimus/video/l/darknet_ros_ntwoc/src/pythonSubPub /home/ac-optimus/video/l/darknet_ros_ntwoc/build /home/ac-optimus/video/l/darknet_ros_ntwoc/build/pythonSubPub /home/ac-optimus/video/l/darknet_ros_ntwoc/build/pythonSubPub/CMakeFiles/pythonSubPub_gencpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pythonSubPub/CMakeFiles/pythonSubPub_gencpp.dir/depend
 

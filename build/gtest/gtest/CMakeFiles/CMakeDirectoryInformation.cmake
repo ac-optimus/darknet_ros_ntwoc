@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/usr/src/gtest")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/ac-optimus/video/darknet_ros_ntwoc/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/ac-optimus/video/l/darknet_ros_ntwoc/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)
