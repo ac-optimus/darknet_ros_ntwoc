@@ -16,6 +16,7 @@
 #include <atomic>
 #include <condition_variable> // std::condition_variable
 #include <unistd.h>
+#include <semaphore.h>
 
 #define MY_PATH "/home/ac-optimus/Pictures/darknet" //location to darknet directory
 
@@ -36,88 +37,70 @@
 
 #include "yolo_v2_class.hpp"
 
-std::mutex lockImg;
-std::mutex lockImg2;
-std::mutex lockBox;
-cv::Mat image1; // = cv::imread("/home/ac-optimus/video/darknet_ros_ntwoc/src/topicImgThreadcpp/data/dog.jpg",CV_LOAD_IMAGE_COLOR); //shared resource
-cv::Mat image2; //ouput image
-topicImgThreadcpp::BoundingBoxArray msgBoxArr;
+#define SIZE_IMG 20
+#define SIZE_YOLO 20
+#define SIZE_YOLOimg 20
 
+cv::Mat buffImg[SIZE_IMG];
+sem_t lockImg,forSub,forPub;
+int ret = sem_init(&lockImg,0,1);
+int ret1 = sem_init(&forSub,0,0);
+int ret2 = sem_init(&forPub, 0, SIZE_IMG);
+int in=0, out = 0; 
+
+topicImgThreadcpp::BoundingBoxArray  buffmsg[SIZE_YOLO];
+sem_t lockMsg, Foryolo, ForPub;
+int re = sem_init(&lockMsg,0,1);
+int re1 = sem_init(&Foryolo,0,SIZE_YOLO);
+int re2 = sem_init(&ForPub,0,0);
+int In=0, Out=0;
+
+cv::Mat buffImgyolo[SIZE_YOLOimg];
+sem_t yoloUp, Pubyolo, lockImgyolo;
+int r = sem_init(&yoloUp,0,SIZE_YOLOimg);
+int r1 = sem_init(&Pubyolo,0,0);
+int r2 = sem_init(&lockImgyolo,0,1);
+int i=0, o=0;
 
 
 //bounding box is a shared resource.
-topicImgThreadcpp::BoundingBoxArray  accessBox(bool flag, std::vector<bbox_t> box)
+topicImgThreadcpp::BoundingBoxArray  accessBox( std::vector<bbox_t> box)
 {
-    std::lock_guard<std::mutex> lock(lockBox);   //will automatically get unlock when out of scope
-    if (flag == 1) //to update with new data
-    {
         topicImgThreadcpp::BoundingBoxArray BoxMsg;
         for (auto i=box.begin(); i!=box.end(); i++)
         {
-            
             topicImgThreadcpp::BoundingBox msgBox;
-            msgBox.Class = (*i).obj_id;                //either change the class data type to int or just let it be.
+            msgBox.Class = (*i).obj_id;     //0 if for person
             msgBox.probability = (*i).prob;//probability
             msgBox.xmin = (*i).x ; //xmin
             msgBox.ymin = (*i).y; //ymin
             msgBox.xmax = (*i).x + (*i).w; //xmax
-            msgBox.ymax = (*i).y + (*i).h; //ymax */   //can put this into a
+            msgBox.ymax = (*i).y + (*i).h; //ymax 
             BoxMsg.message.push_back(msgBox);   
         }
-        msgBoxArr = BoxMsg;
-    }
-    return msgBoxArr;
-}
-
-
-void print_result(std::vector<bbox_t>result_vec)
-{
-    std::vector<bbox_t> l =result_vec;
+        return BoxMsg;
     
-    for (auto i=l.begin(); i != l.end(); ++i )
-    std::cout << "result details" << " " <<(*i).obj_id << " " << (*i).x<< " " << (*i).y << " " << (*i).w << " " << (*i).h<< " " << std::endl; 
-
+    
 }
-
-
-
-
-//image is a shared resource
-cv::Mat accessImg(int flag,const sensor_msgs::ImageConstPtr& msg) //passing pointer is a good idea
-{
-    std::lock_guard<std::mutex> lock(lockImg);
-    //flag=1 for writing
-    cv::Mat img;
-    if(flag==1)
-    {
-        image1 = cv_bridge::toCvCopy(msg,"bgr8")->image;
-        img = image1;
-    }
-    else if (flag == 0) //assign to image2
-    {
-        std::lock_guard<std::mutex> lock(lockImg2);
-        img = image2;
-    }
-    else
-    {
-        img = image1;
-    }
-    return img;
-}
-
 
 cv::Mat darknetyolo(ros::NodeHandle n) 
 {
-   ros::Rate loop_rate(1);//1 publish per seconds
+   ros::Rate loop_rate(10);//10 publish per seconds
    while (n.ok())
    {
-    const sensor_msgs::ImageConstPtr& msg =NULL;
-    cv::Mat img = accessImg(9,msg);
-    ROS_INFO("Was inside.");
+    sem_wait(&forSub);
+    sem_wait(&lockImg);
+  //  ROS_INFO("The value of out for darknet was: [%d]",out);
+    cv::Mat img = buffImg[out];
+    out = (out+1)%SIZE_IMG;
+    sem_post(&lockImg);
+    sem_post(&forPub);
+    ROS_INFO("image accessed from the buffer, FIFO.");
+
     if (!img.empty())
     {    
         chdir(MY_PATH);   //change directory in this scope
-        std::string  names_file = "data/coco.names";   //add the data file here
+        std::string  names_file = "data/coco.names";    //data file 
         std::string  cfg_file = "cfg/yolov3-tiny.cfg";  //configuration file
         std::string  weights_file = "yolov3-tiny.weights"; //weight files
         float const thresh = 0.20;
@@ -126,15 +109,24 @@ cv::Mat darknetyolo(ros::NodeHandle n)
         Detector detector(cfg_file, weights_file);
 
         std::vector<bbox_t> msgBoxyolo = detector.detect(img);
-        accessBox(1,msgBoxyolo); // pass by reference
-        ROS_INFO("coordinates added.");
+
+        sem_wait(&Foryolo);
+        sem_wait(&lockMsg);
+        buffmsg[In] = accessBox(msgBoxyolo);
+        In = (In+1) % SIZE_YOLO;
+        sem_post(&lockMsg);
+        sem_post(&ForPub);
+        ROS_INFO("box added to message buffer.");
     
-        std::lock_guard<std::mutex> lock(lockImg2);
-        image2 = img.clone();
-        draw_boxes(image2,msgBoxyolo,obj_name);
-       // cv::imshow("Output",image2);
-       // cv::waitKey(30);  
-        ROS_INFO("yolo at work!!");
+        draw_boxes(img,msgBoxyolo,obj_name);
+
+        sem_wait(&yoloUp);
+        sem_wait(&lockImgyolo);
+        buffImgyolo[i] = img;
+        i = (i+1) %  SIZE_YOLOimg;
+        sem_post(&lockImgyolo);
+        sem_post(&Pubyolo); 
+        ROS_INFO("modified image added to another buffer.");
     }
     else{
         ROS_INFO("The image was empty --yolo");
@@ -145,84 +137,91 @@ cv::Mat darknetyolo(ros::NodeHandle n)
     
 }
 
+//bounding box message publisher
 void pubBoundingBox(ros::NodeHandle n)
 {
     ros::Publisher pub = n.advertise<topicImgThreadcpp::BoundingBoxArray>("msgTop",10);
     ros::Rate rate(1);
     while (n.ok())//see if node is live
     {
-        std::vector<bbox_t> msg1;
-        topicImgThreadcpp::BoundingBoxArray msg = accessBox(0,msg1);  //get the message
+        
+        sem_wait(&ForPub);
+        sem_wait(&lockMsg);
+        topicImgThreadcpp::BoundingBoxArray msg =  buffmsg[Out];  //get the message
+        Out = (Out+1) % SIZE_YOLO;
+        sem_post(&lockMsg);
+        sem_post(&Foryolo);
+
         pub.publish(msg);
-        ROS_INFO("message sent.");
+        ROS_INFO("Bounding box message sent.");
         rate.sleep();
     }
 }
 
 
-//publishing thread
+//modified publishing image thread
 void pubThread(ros::NodeHandle n)
 {
         image_transport::ImageTransport it(n);
         image_transport::Publisher pub = it.advertise("imgTop2", 1);
-        ros::Rate loop_rate(1);//1 publish per seconds
+        ros::Rate loop_rate(10);//a max 10 publish per seconds
         while (n.ok())
         {
-            //lock the resource before the usage
-          //  std::lock_guard<std::mutex> lock(lockImg);//when lock is there this thread takes the ownership of the mutex object lockImg
-            //lockImg.lock();
-            const sensor_msgs::ImageConstPtr& msg =NULL;
-            cv::Mat img = accessImg(0,msg);
+            cv::Mat img ;
+            sem_wait(&Pubyolo);
+            sem_wait(&lockImgyolo);
+            img = buffImgyolo[o];
+            o = (o+1) %  SIZE_YOLOimg;
+            sem_post(&lockImgyolo);
+            sem_post(&yoloUp);
+
+            ROS_INFO("modified image accessed from the buffer.");
+
             if (!img.empty())
             {    
-               // image1 = greyIt(image1);
-             
                 sensor_msgs::ImagePtr msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", img).toImageMsg();
                 
                 pub.publish(msg);
-                ROS_INFO("image sent.");
+                ROS_INFO("modified image sent.");
             }
             else
             {
             ROS_INFO("the image was empty.");
             }
-            //  ros::spinOnce();
-           // lockImg.unlock();
             loop_rate.sleep();
         
     }
-}//lock automatically get released.
+}
 
 //callback
 void callback(const sensor_msgs::ImageConstPtr& msg) 
 {
     try
     {
-      
-        cv::Mat img = accessImg(1,msg);
-        ROS_INFO("image recieved.");
-        if (!img.empty())
-        {
-        
-          //  cv::imshow("sub",img);
-         //   cv::waitKey(30);
-        }
+        sem_wait(&forPub);
+        sem_wait(&lockImg);
+      //  ROS_INFO("The value for subscriber was: [%d]",in);
+        buffImg[in] = cv_bridge::toCvCopy(msg,"bgr8")->image;
+        in = (in+1) % SIZE_IMG;
+        ROS_INFO("image recieved by the node.");
+        sem_post(&lockImg);
+        sem_post(&forSub);
+
     }
     catch (cv_bridge::Exception& e)
     {
          ROS_ERROR("Could not convert from '%s' to 'bgr8'.", msg->encoding.c_str());
     }
-}//lock automatically get released.
+}
 
 
-//subscribing thread
+//image subscribing thread
 void subThread(ros::NodeHandle n)
 {
-    ROS_INFO("i was here man.");
+   
     cv::namedWindow("sub");
-    cv::startWindowThread();//what is the role of thread here
+    cv::startWindowThread();
     image_transport::ImageTransport it(n); 
-    
     image_transport::Subscriber sub = it.subscribe("imgTop1", 1, callback);
     ros::spin();
     cv::destroyWindow("sub");   
@@ -231,10 +230,10 @@ void subThread(ros::NodeHandle n)
 int main(int argc, char** argv)
 {
 
-    ros::init(argc, argv, "examples");
+    ros::init(argc, argv, "yoloBoundingBOxMessenger");
     ros::NodeHandle nl;
     std::thread subImg(subThread,nl);   
-    std::thread pubImg(pubThread, nl);  //additional thread
+    std::thread pubImg(pubThread, nl);  //additional thread to publish the new modified image.
     std::thread pubBox(pubBoundingBox,nl);
     std::thread yolo(darknetyolo,nl);
     if (pubBox.joinable())

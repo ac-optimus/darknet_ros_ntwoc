@@ -18,11 +18,11 @@ void callback(const topicImgThreadcpp::BoundingBoxArray::ConstPtr& msg) //why co
             ROS_INFO_STREAM("Class: " << data.Class << " | Probability: " << data.probability <<  " | xmin: "<<  data.xmin << "| ymin: " <<  data.ymin << " | xmax:" <<  data.xmax << " | ymax: "<< data.ymax );
         }
         ROS_INFO("message recieved.");
-        
+    
     }
     catch (...)
     {
-         ROS_ERROR("nana");
+         ROS_ERROR("some error.");
     }
 
 }
