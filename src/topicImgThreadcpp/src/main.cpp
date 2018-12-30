@@ -17,7 +17,7 @@
 #include <condition_variable> // std::condition_variable
 #include <unistd.h>
 #include <semaphore.h>
-
+#include <ctime>
 #define MY_PATH "/home/ac-optimus/Pictures/darknet" //location to darknet directory
 
 //opencv
@@ -37,7 +37,7 @@
 
 #include "yolo_v2_class.hpp"
 
-#define SIZE_IMG 20
+#define SIZE_IMG 400
 #define SIZE_YOLO 20
 #define SIZE_YOLOimg 20
 
@@ -78,14 +78,19 @@ topicImgThreadcpp::BoundingBoxArray  accessBox( std::vector<bbox_t> box)
             msgBox.ymax = (*i).y + (*i).h; //ymax 
             BoxMsg.message.push_back(msgBox);   
         }
-        return BoxMsg;
-    
-    
+        return BoxMsg;   
 }
 
 cv::Mat darknetyolo(ros::NodeHandle n) 
 {
    ros::Rate loop_rate(10);//10 publish per seconds
+   chdir(MY_PATH);   //change directory in this scope
+   std::string  names_file = "data/coco.names";    //data file 
+   std::string  cfg_file = "cfg/yolov3-tiny.cfg";  //configuration file
+   std::string  weights_file = "yolov3-tiny.weights"; //weight files
+   float const thresh = 0.20;
+   auto obj_name = objects_names_from_file(names_file); //a vector of strings
+   Detector detector(cfg_file, weights_file);
    while (n.ok())
    {
     sem_wait(&forSub);
@@ -99,17 +104,10 @@ cv::Mat darknetyolo(ros::NodeHandle n)
 
     if (!img.empty())
     {    
-        chdir(MY_PATH);   //change directory in this scope
-        std::string  names_file = "data/coco.names";    //data file 
-        std::string  cfg_file = "cfg/yolov3-tiny.cfg";  //configuration file
-        std::string  weights_file = "yolov3-tiny.weights"; //weight files
-        float const thresh = 0.20;
-
-        auto obj_name = objects_names_from_file(names_file); //a vector of strings
-        Detector detector(cfg_file, weights_file);
-
+       // int start = clock();
         std::vector<bbox_t> msgBoxyolo = detector.detect(img);
-
+       // int req = clock() - start;
+        //ROS_INFO("THE TIME TAKEN WAS: %f",(float)req/CLOCKS_PER_SEC);
         sem_wait(&Foryolo);
         sem_wait(&lockMsg);
         buffmsg[In] = accessBox(msgBoxyolo);
