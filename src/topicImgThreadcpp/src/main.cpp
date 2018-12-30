@@ -18,7 +18,7 @@
 #include <unistd.h>
 #include <semaphore.h>
 #include <ctime>
-#define MY_PATH "/home/ac-optimus/Pictures/darknet" //location to darknet directory
+#define DARKNET_PATH "/home/ac-optimus/Desktop/darknet" //location to darknet directory
 
 //opencv
 #include <opencv2/opencv.hpp>            // C++
@@ -37,9 +37,9 @@
 
 #include "yolo_v2_class.hpp"
 
-#define SIZE_IMG 400
-#define SIZE_YOLO 20
-#define SIZE_YOLOimg 20
+#define SIZE_IMG 5  //change the size of fifo queue according to needs
+#define SIZE_YOLO 5
+#define SIZE_YOLOimg 5
 
 cv::Mat buffImg[SIZE_IMG];
 sem_t lockImg,forSub,forPub;
@@ -85,10 +85,10 @@ cv::Mat darknetyolo(ros::NodeHandle n)
 {
    
    ros::Rate loop_rate(10);//10 publish per seconds
-   chdir(MY_PATH);   //change directory in this scope
+   chdir(DARKNET_PATH);   //change directory in this scope
    std::string  names_file = "data/coco.names";    //data file 
    std::string  cfg_file = "cfg/yolov3-tiny.cfg";  //configuration file
-   std::string  weights_file = "yolov3-tiny.weights"; //weight files
+   std::string  weights_file = "weights/yolov3-tiny.weights"; //weight files
    float const thresh = 0.20;
    auto obj_name = objects_names_from_file(names_file); //a vector of strings
    Detector detector(cfg_file, weights_file);
@@ -218,12 +218,12 @@ void callback(const sensor_msgs::ImageConstPtr& msg)
 void subThread(ros::NodeHandle n)
 {
    
-    cv::namedWindow("sub");
-    cv::startWindowThread();
+   // cv::namedWindow("sub");
+   // cv::startWindowThread();
     image_transport::ImageTransport it(n); 
-    image_transport::Subscriber sub = it.subscribe("imgTop1", 1, callback);
+    image_transport::Subscriber sub = it.subscribe("camera/image_raw", 1, callback);
     ros::spin();
-    cv::destroyWindow("sub");   
+   // cv::destroyWindow("sub");   
 }
 
 int main(int argc, char** argv)
