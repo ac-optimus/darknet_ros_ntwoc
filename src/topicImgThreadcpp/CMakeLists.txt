@@ -4,9 +4,9 @@ project(topicImgThreadcpp)
 ## Compile as C++11, supported in ROS Kinetic and newer
  add_compile_options(-std=c++11 -pthread)
 
-set(OPENCV 1)
-
-
+ add_definitions(-O4 -g)
+ add_definitions(-DOPENCV )
+ 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   image_transport

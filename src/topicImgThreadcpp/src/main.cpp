@@ -83,6 +83,7 @@ topicImgThreadcpp::BoundingBoxArray  accessBox( std::vector<bbox_t> box)
 
 cv::Mat darknetyolo(ros::NodeHandle n) 
 {
+   
    ros::Rate loop_rate(10);//10 publish per seconds
    chdir(MY_PATH);   //change directory in this scope
    std::string  names_file = "data/coco.names";    //data file 
@@ -104,10 +105,10 @@ cv::Mat darknetyolo(ros::NodeHandle n)
 
     if (!img.empty())
     {    
-       // int start = clock();
+        int start = clock();
         std::vector<bbox_t> msgBoxyolo = detector.detect(img);
-       // int req = clock() - start;
-        //ROS_INFO("THE TIME TAKEN WAS: %f",(float)req/CLOCKS_PER_SEC);
+        int req = clock() - start;
+        ROS_INFO("THE TIME TAKEN WAS: %f",(float)req/CLOCKS_PER_SEC);
         sem_wait(&Foryolo);
         sem_wait(&lockMsg);
         buffmsg[In] = accessBox(msgBoxyolo);
