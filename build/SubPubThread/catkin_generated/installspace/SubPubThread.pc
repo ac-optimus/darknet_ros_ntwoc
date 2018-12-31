@@ -1,8 +1,0 @@
-prefix=/home/ac-optimus/darknet_ros_ntwoc/install
-
-Name: SubPubThread
-Description: Description of SubPubThread
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/ac-optimus/darknet_ros_ntwoc/install/lib 
-Requires: 
