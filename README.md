@@ -1,40 +1,39 @@
 # darknet_ros
-Robotics Operating System Package for Yolo v3 based on darknet with optimized tracking using Kalman Filter and Optical Flow.
+Robotics Operating System Package for Yolo v3 based on darknet.
 
 ## Abstract:
-To develop a ROS package for darknet Yolo v3 based on [AlexeyAB Darknet](https://github.com/AlexeyAB/darknet) and implement optimized object tracking using Kalman Filter and Optical Flow.
+The repo provides two packages :
 
-### Sub-Projects -
-#### Robotics Operating System
-* Structuring Publishers and Subscribers for ROS.
-* Creating custom messages based on Bounding Box output by Yolo v3.
+``` yoloDarknetRosNode``` : 
+A ROS package for darknet Yolo v3 based on [AlexeyAB Darknet](https://github.com/AlexeyAB/darknet). The main node in the package named ```yoloBoundingBOxMessenger``` subscribes to a topic of ros_image and publishes object detected output on two different topics. Where it publishes modified object detected image on one topic while on the other it publishes the bounding box message, containing the object detected box details.  All the implementation are done using cpp multithreading. 
 
-#### C++ Multithreading Implementation
-* Fetch Thread - Subscribe to Image ROS Topic and get the image in OpenCV Format.
-* Detect Thread - Create Yolo Object Detector based on [AlexeyAB Darknet](https://github.com/AlexeyAB/darknet).  
-* Publish Thread - Publish the output from Yolo Object Detector as a ROSTopic of BoundingBoxes
+```video_stream_opencv ```: 
+The package is taken [from](http://wiki.ros.org/video_stream_opencv). It publishes rosimage on ```/camera/raw_image``` topic, where frames are taken from the webcamera. 
 
-#### Tracking Optimization
-* Kalman Filter Implementation - To predict and smooth out bounding box outputs.
-* Optical Flow Implementation - To improve object detection and tracking.
+### Usage : 
+1. Make a new workspace or add the packages to your workspace's src directory.([create ros workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)).
+2. run catkin_make at the location ~/yourWorkspace.
+3. run ```rosrun yoloDarknetRosNode main``` to kick start the ```yoloBoundingBOxMessenger``` node.
+4. run ```rosrun yoloDarknetRosNode sub``` to activate the ```subs``` node that will subscribe to the bounding box message.
+4. to publish the image that can be accessed by the ```yoloBoundingBOxMessenger``` node run either of one : <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a. run the test ```image_publisher``` node by : ```rosrun yoloDarknetRosNode ImgSub``` <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b. run the other package provided by : ```roslaunch video_stream_opencv camera.launch``` <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     to get the image feed from your webcam. For more detailed usage of video_stream_opencv package look.
+```
+Note with method b change the topic in the main.cpp file from "imgTop1" to "camera/raw_image".
+```
 
-#### Documentation
-* Develop user-based tutorials for the package.
-* Publicise ROS pacakge on ROS Discourse.
-* Develop demo examples demonstrating object detections.
+```
+Results :
+A preak fps of 14 was reached using nvidia GEFORCE 930m on i5 6th gen cpu.
+```
+### Requirement:  
+* **Linux GCC>=4.9**
+* **darknet**
+* **ROS Kinetic**
+* **CUDA 10.0**
+* **OPENCV < 3.2**.
 
-#### Future Developments 
-* Multiple ROS Image topic support (i.e Multiple Camera Support)
-* 
-
-Prerequisites : C++ Programming Skills, Robotics Operating System, Multithreading-Mutex Concepts, CMake.
 Helpful Links - 
 1. [AlexeyAB Darknet](https://github.com/AlexeyAB/darknet)
 2. [Yolo v3 Paper](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
-3. [Kalman Filter OpenCV](https://docs.opencv.org/3.4.1/dd/d6a/classcv_1_1KalmanFilter.html)
-4. [Optical Flow OpenCV](https://docs.opencv.org/3.4/d7/d8b/tutorial_py_lucas_kanade.html)
-
-Selection Procedure:(Complete one of the following tasks to work on the project.)
-1. Develop an object-oriented C++ application using mutex concepts.
-2. Develop a custom message example publisher and subscriber for ROS.
-3. Setup darknet and run object detection example on video feed.
+3. [ROS](http://www.ros.org/)
