@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(topicImgThreadcpp)
+project(yoloDarknetRosNode)
 
  add_compile_options(-std=c++11 -pthread )
 
@@ -79,7 +79,7 @@ include_directories(
 catkin_package(
   DEPENDS boot GSTREAMER
  #INCLUDE_DIRS include
-#  LIBRARIES topicImgThreadcpp
+#  LIBRARIES yoloDarknetRosNode
   CATKIN_DEPENDS message_runtime roscpp std_msgs
 #  DEPENDS system_lib
 )

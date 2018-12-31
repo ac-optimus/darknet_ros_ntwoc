@@ -4,7 +4,7 @@
 #include <cv_bridge/cv_bridge.h>
 #include <thread>
 #include <mutex>
-#include "topicImgThreadcpp/BoundingBox.h"
+#include "yoloDarknetRosNode/BoundingBox.h"
 
 #include <iostream>
 #include <iomanip> 
@@ -50,7 +50,7 @@ void print_result(std::vector<bbox_t>result_vec)
 std::mutex lockImg;
 std::mutex lockBox;//for bounding box
 cv::Mat image1; //shared resource
-topicImgThreadcpp::BoundingBox msgBox; //boundingBox
+yoloDarknetRosNode::BoundingBox msgBox; //boundingBox
 
 
 
@@ -189,7 +189,7 @@ void pubThread(ros::NodeHandle n)
 
 void pubCordnts(ros::NodeHandle n)
 {
-    ros::Publisher pubBox = n.advertise<topicImgThreadcpp::BoundingBox>("BoxCord",1000);
+    ros::Publisher pubBox = n.advertise<yoloDarknetRosNode::BoundingBox>("BoxCord",1000);
     ros::Rate rate(10);
     while (n.ok())
     {

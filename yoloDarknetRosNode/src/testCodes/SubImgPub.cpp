@@ -4,14 +4,14 @@
 #include <cv_bridge/cv_bridge.h>
 #include <thread>
 #include <mutex>
-#include "topicImgThreadcpp/BoundingBox.h"
+#include "yoloDarknetRosNode/BoundingBox.h"
 
 
 
 std::mutex m;
 std::mutex m1;
 cv::Mat image1; //shared resource
-topicImgThreadcpp::BoundingBox msgBox; //boundingBox
+yoloDarknetRosNode::BoundingBox msgBox; //boundingBox
 
 
 void darknetyolo(void) 
@@ -30,7 +30,7 @@ void darknetyolo(void)
 
 void pubCordnts(ros::NodeHandle n)
 {
-    ros::Publisher pubBox = n.advertise<topicImgThreadcpp::BoundingBox>("BoxCord",1000);
+    ros::Publisher pubBox = n.advertise<yoloDarknetRosNode::BoundingBox>("BoxCord",1000);
     ros::Rate rate(10);
     while (n.ok())
     {

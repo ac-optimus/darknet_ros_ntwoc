@@ -5,8 +5,8 @@
 #include <cv_bridge/cv_bridge.h>
 #include <thread>
 #include <mutex>
-#include <topicImgThreadcpp/BoundingBoxArray.h>
-#include <topicImgThreadcpp/BoundingBox.h>
+#include <yoloDarknetRosNode/BoundingBoxArray.h>
+#include <yoloDarknetRosNode/BoundingBox.h>
 #include <iostream>
 #include <iomanip> 
 #include <string>
@@ -50,7 +50,7 @@ int ret2 = sem_init(&forPub, 0, SIZE_IMG);
 int in=0, out = 0; 
 
 //shared resource bounding box output from yolo
-topicImgThreadcpp::BoundingBoxArray  buffmsg[SIZE_YOLO];
+yoloDarknetRosNode::BoundingBoxArray  buffmsg[SIZE_YOLO];
 sem_t lockMsg, Foryolo, ForPub;
 int re = sem_init(&lockMsg,0,1);
 int re1 = sem_init(&Foryolo,0,SIZE_YOLO);
@@ -67,12 +67,12 @@ int i=0, o=0;
 
 
 //bounding box is a shared resource.
-topicImgThreadcpp::BoundingBoxArray  accessBox( std::vector<bbox_t> box)
+yoloDarknetRosNode::BoundingBoxArray  accessBox( std::vector<bbox_t> box)
 {
-        topicImgThreadcpp::BoundingBoxArray BoxMsg;
+        yoloDarknetRosNode::BoundingBoxArray BoxMsg;
         for (auto i=box.begin(); i!=box.end(); i++)
         {
-            topicImgThreadcpp::BoundingBox msgBox;
+            yoloDarknetRosNode::BoundingBox msgBox;
             msgBox.Class = (*i).obj_id;     //0 if for person
             msgBox.probability = (*i).prob;//probability
             msgBox.xmin = (*i).x ; //xmin
@@ -142,14 +142,14 @@ cv::Mat darknetyolo(ros::NodeHandle n)
 //bounding box message publisher
 void pubBoundingBox(ros::NodeHandle n)
 {
-    ros::Publisher pub = n.advertise<topicImgThreadcpp::BoundingBoxArray>("msgTop",10);
+    ros::Publisher pub = n.advertise<yoloDarknetRosNode::BoundingBoxArray>("msgTop",10);
     ros::Rate rate(1);
     while (n.ok())//see if node is live
     {
         
         sem_wait(&ForPub);
         sem_wait(&lockMsg);
-        topicImgThreadcpp::BoundingBoxArray msg =  buffmsg[Out];  //get the message
+        yoloDarknetRosNode::BoundingBoxArray msg =  buffmsg[Out];  //get the message
         Out = (Out+1) % SIZE_YOLO;
         sem_post(&lockMsg);
         sem_post(&Foryolo);
