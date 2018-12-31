@@ -19,8 +19,11 @@ The package is taken [from](http://wiki.ros.org/video_stream_opencv). It publish
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a. run the test ```image_publisher``` node by : ```rosrun yoloDarknetRosNode ImgSub``` <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b. run the other package provided by : ```roslaunch video_stream_opencv camera.launch``` <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     to get the image feed from your webcam. For more detailed usage of video_stream_opencv package look.
 ```
-Note with method b change the topic in the main.cpp file from "imgTop1" to "camera/raw_image".
+Note with method b change the topic in main.cpp file from "imgTop1" to "camera/raw_image".
 ```
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/26172160/50568113-529e0a80-0d73-11e9-83e7-87d7279767d2.gif)
+
+![ezgif com-crop](https://user-images.githubusercontent.com/26172160/50567917-aeb35f80-0d70-11e9-920d-339c6b81e6f8.gif)
 
 ```
 Results :
