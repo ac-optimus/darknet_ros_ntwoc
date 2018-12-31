@@ -2,10 +2,35 @@ cmake_minimum_required(VERSION 2.8.3)
 project(topicImgThreadcpp)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
- add_compile_options(-std=c++11 -pthread)
+ add_compile_options(-std=c++11 -pthread )
 
  add_definitions(-O4 -g)
  add_definitions(-DOPENCV )
+
+ FIND_PACKAGE(CUDA)
+
+  find_package(CUDA REQUIRED)
+  message(STATUS "CUDA Version: ${CUDA_VERSION_STRINGS}")
+  message(STATUS "CUDA Libararies: ${CUDA_LIBRARIES}")
+  set(
+    CUDA_NVCC_FLAGS
+    ${CUDA_NVCC_FLAGS};
+    -O3
+    -gencode arch=compute_30,code=sm_30
+    -gencode arch=compute_35,code=sm_35
+    -gencode arch=compute_50,code=[sm_50,compute_50]
+    -gencode arch=compute_52,code=[sm_52,compute_52]
+    -gencode arch=compute_61,code=sm_61
+  )
+  add_definitions(-DGPU )
+
+
+
+  link_directories(
+    /usr/local/cuda/lib64
+  
+  )
+
  
 find_package(catkin REQUIRED COMPONENTS
   roscpp
@@ -32,13 +57,14 @@ add_message_files(
    std_msgs
  )
 
-set (MY_DIR 'darknet')
+
 include_directories(
- 
+  /usr/local/cuda-10.0/include 
   ${catkin_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIRS}
   ${GSTREAMER_INCLUDE_DIRS}
+  
 )
 
 catkin_package(
@@ -48,10 +74,22 @@ catkin_package(
   CATKIN_DEPENDS message_runtime roscpp std_msgs
 #  DEPENDS system_lib
 )
+message("COMMON_FLAGS: " ${COMMON_FLAGS})
+message("CUDA_NVCC_FLAGS: " ${CUDA_NVCC_FLAGS})
+message("CUDA_curand_LIBRARY: " ${CUDA_curand_LIBRARY})
+#message("OpenCV_LIBS: " ${OpenCV_LIBS})
+#message("catkin_LIBRARIES: " ${catkin_LIBRARIES})
+#message("CMAKE_THREAD_LIBS_INIT: ",${CMAKE_THREAD_LIBS_INIT})
+message("CUDA_LIBRARIES: " ${CUDA_LIBRARIES})
+message("CUDA_CUBLAS_LIBRARIES: " ${CUDA_CUBLAS_LIBRARIES})
+message("CUDA_curand_LIBRARY: " ${CUDA_curand_LIBRARY})
+# INCLUDES
+#message("catkin_INCLUDE_DIRS: " ${catkin_INCLUDE_DIRS})
+#message("OpenCV_INCLUDE_DIRS: " ${OpenCV_INCLUDE_DIRS})
+message("CUDA_INCLUDE_DIRS: " ${CUDA_INCLUDE_DIRS})
+message("LINK_DIRECTORIES:  " ${LINK_DIRECTORIES})   #great usage function
 
-message("${${PROJECT_NAME}_EXPORTED_TARGETS}: " ${catkin__EXPORTED_TARGETS})   #great usage function
-
-add_executable(main  src/main.cpp darknet/yolo_v2_class.hpp
+cuda_add_executable(main  src/main.cpp darknet/yolo_v2_class.hpp
 darknet/activation_kernels.cu     darknet/deconvolutional_kernels.cu  darknet/normalization_layer.c
 darknet/activation_layer.c        darknet/deconvolutional_layer.c     darknet/normalization_layer.h
 darknet/activation_layer.h        darknet/deconvolutional_layer.h     darknet/option_list.c
@@ -96,9 +134,22 @@ darknet/cuda.h                    darknet/network.c                   darknet/yo
 darknet/data.c                    darknet/network_kernels.cu          darknet/yolo_v2_class.cpp
 darknet/data.h                    darknet/nightmare.c                 
 )
-
-target_link_libraries(main ${catkin_LIBRARIES} ${OpenCV_LIBRARIES}  ${Boost_LIBRARIES} )
-add_dependencies(main ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries( main
+    m
+    stdc++
+    cuda
+    cudart
+    cublas
+    curand
+    ${Boost_LIBRARIES}
+    ${OpenCV_LIBRARIES}
+    ${catkin_LIBRARIES}
+    ${OpenCV_LIBS}
+    
+    
+  )
+#target_link_libraries(main ${catkin_LIBRARIES} ${OpenCV_LIBRARIES}  ${Boost_LIBRARIES} )
+add_dependencies(main ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS}   )
 
 add_executable(ImgPub src/ImgPub.cpp)
 target_link_libraries(ImgPub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
