@@ -1,4 +1,4 @@
-//node subscribes an image from topic1 and then publishes the gray scale image on a topic2
+//multithreaded node that subscribes an image from topic1 and then publishes the object detected image and its bounding box message on seperate topics.
 #include <ros/ros.h>
 #include <image_transport/image_transport.h>
 #include <opencv2/highgui/highgui.hpp>
@@ -18,7 +18,7 @@
 #include <unistd.h>
 #include <semaphore.h>
 #include <ctime>
-#define DARKNET_PATH "/home/ac-optimus/Desktop/darknet" //location to darknet directory
+//#define DARKNET_PATH "/home/ac-optimus/Desktop/darknet" //location to darknet directory
 
 //opencv
 #include <opencv2/opencv.hpp>            // C++
@@ -41,6 +41,7 @@
 #define SIZE_YOLO 5
 #define SIZE_YOLOimg 5
 
+//shared resource subscribed image
 cv::Mat buffImg[SIZE_IMG];
 sem_t lockImg,forSub,forPub;
 int ret = sem_init(&lockImg,0,1);
@@ -48,6 +49,7 @@ int ret1 = sem_init(&forSub,0,0);
 int ret2 = sem_init(&forPub, 0, SIZE_IMG);
 int in=0, out = 0; 
 
+//shared resource bounding box output from yolo
 topicImgThreadcpp::BoundingBoxArray  buffmsg[SIZE_YOLO];
 sem_t lockMsg, Foryolo, ForPub;
 int re = sem_init(&lockMsg,0,1);
@@ -55,6 +57,7 @@ int re1 = sem_init(&Foryolo,0,SIZE_YOLO);
 int re2 = sem_init(&ForPub,0,0);
 int In=0, Out=0;
 
+//shared resource modified image, with object detected bounding boxes
 cv::Mat buffImgyolo[SIZE_YOLOimg];
 sem_t yoloUp, Pubyolo, lockImgyolo;
 int r = sem_init(&yoloUp,0,SIZE_YOLOimg);
@@ -108,7 +111,7 @@ cv::Mat darknetyolo(ros::NodeHandle n)
         int start = clock();
         std::vector<bbox_t> msgBoxyolo = detector.detect(img);
         int req = clock() - start;
-        ROS_INFO("THE TIME TAKEN WAS: %f",(float)req/CLOCKS_PER_SEC);
+        ROS_INFO("THE TIME TAKEN FOR DETECTION: %f",(float)req/CLOCKS_PER_SEC);
         sem_wait(&Foryolo);
         sem_wait(&lockMsg);
         buffmsg[In] = accessBox(msgBoxyolo);
@@ -221,7 +224,7 @@ void subThread(ros::NodeHandle n)
    // cv::namedWindow("sub");
    // cv::startWindowThread();
     image_transport::ImageTransport it(n); 
-    image_transport::Subscriber sub = it.subscribe("camera/image_raw", 1, callback);
+    image_transport::Subscriber sub = it.subscribe("imgTop1", 1, callback);
     ros::spin();
    // cv::destroyWindow("sub");   
 }
