@@ -376,7 +376,7 @@ std::vector<std::string> objects_names_from_file(std::string const filename) {
 void draw_boxes(cv::Mat mat_img, std::vector<bbox_t> result_vec, std::vector<std::string> obj_names, 
     int current_det_fps = -1, int current_cap_fps = -1)
 {
-    std::cout<<"I was here"<<std::endl;
+    
     int const colors[6][3] = { { 1,0,1 },{ 0,0,1 },{ 0,1,1 },{ 0,1,0 },{ 1,1,0 },{ 1,0,0 } };
 
     for (auto &i : result_vec) {

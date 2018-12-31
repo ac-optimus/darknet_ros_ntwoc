@@ -9,12 +9,14 @@
 #include <unistd.h>
 
 
-std::vector<std::string> ImgLst(std::string filename)
+std::vector<std::string> ImgLst()
 {
+  chdir(DARKNET_PATH); 
   std::vector<std::string> list ;
   std::ifstream file;
   std::string line;
-  file.open(filename);
+  
+  file.open("../data/input.txt");
   while (file)
   {
     std::getline(file,line);
@@ -34,14 +36,13 @@ int main(int argc, char** argv)
     image_transport::ImageTransport it(nh);
 
 
-    std::vector<std::string> inputImgs = ImgLst(argv[1]);
+    std::vector<std::string> inputImgs = ImgLst();
 
-  //  ROS_INFO("accessing images from file: [%s]",argv[3].data.c_str());
-      std::cout << "accessing images from file: "<<argv[1]<<std::endl;
+      std::cout << "accessing images from file: "<<"../data/input/txt"<<std::endl;
     
     for (auto i=inputImgs.begin(); i != inputImgs.end(); ++i )
     {
-      std::cout << "i was inside" <<std::endl;
+      
 //        ROS_INFO("sending: [%s] ",(*i).data.c_str()); 
         std::cout << "sending: "<<*i << std::endl;      
 
