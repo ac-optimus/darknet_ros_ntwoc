@@ -17,7 +17,7 @@ The package is taken [from](http://wiki.ros.org/video_stream_opencv). It publish
 4. run ```rosrun yoloDarknetRosNode sub``` to activate the ```subs``` node that will subscribe to the bounding box message.
 4. to publish the image that can be accessed by the ```yoloBoundingBOxMessenger``` node run either of one : <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a. run the test ```image_publisher``` node by : ```rosrun yoloDarknetRosNode ImgSub``` <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b. run the other package provided by : ```roslaunch video_stream_opencv camera.launch``` <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     to get the image feed from your webcam. For more detailed usage of video_stream_opencv package look.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b. run the other package provided by : ```roslaunch video_stream_opencv camera.launch``` <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     to get the image feed from your webcam. For more detailed usage of video_stream_opencv package [look](http://wiki.ros.org/video_stream_opencv).
 ```
 Note with method b change the topic in main.cpp file from "imgTop1" to "camera/raw_image".
 ```
@@ -34,7 +34,7 @@ A preak fps of 14 was reached using nvidia GEFORCE 930m on i5 6th gen cpu.
 * **darknet**
 * **ROS Kinetic**
 * **CUDA 10.0**
-* **OPENCV < 3.2**.
+* **2.x.x < OPENCV <= 3.4.0**.
 
 Helpful Links - 
 1. [AlexeyAB Darknet](https://github.com/AlexeyAB/darknet)
