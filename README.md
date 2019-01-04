@@ -27,7 +27,7 @@ Note with method b change the topic in main.cpp file from "imgTop1" to "camera/r
 
 ## Results :
 ```
-Each detection takes ~0.068-0.077s which makes peak fps to ~14 on nvidia GEFORCE 930M on i5 6th gen cpu.
+Each detection takes ~0.068-0.077s which makes peak fps to ~14 on nvidia GEFORCE 930M(2GB RAM), i5 6th gen cpu system with 8GB RAM.
 ```
 ### Requirement:  
 * **Linux GCC>=4.9**
