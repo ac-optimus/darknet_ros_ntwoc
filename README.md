@@ -25,9 +25,9 @@ Note with method b change the topic in main.cpp file from "imgTop1" to "camera/r
 
 ![ezgif com-crop](https://user-images.githubusercontent.com/26172160/50567917-aeb35f80-0d70-11e9-920d-339c6b81e6f8.gif)
 
+## Results :
 ```
-Results :
-A preak fps of 14 was reached using nvidia GEFORCE 930m on i5 6th gen cpu.
+Each detection takes ~0.068-0.077s which makes peak fps to ~14 on nvidia GEFORCE 930M on i5 6th gen cpu.
 ```
 ### Requirement:  
 * **Linux GCC>=4.9**
